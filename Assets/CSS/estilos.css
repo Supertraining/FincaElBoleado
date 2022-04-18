@@ -1,0 +1,1201 @@
+  @import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Smooch+Sans:wght@300;400&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+/*SITIO*************************************/
+/*BODY+++++++CONTENEDOR PRINCIPAL*/
+  .contenedorPrincipal {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6,auto);
+  }
+  
+  .barraNavegacion {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("../Img/wood_1.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+  }
+  @media (min-width: 480px) {
+    .barraNavegacion {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 400px;
+    }
+  }
+  @media (min-width: 768px) {
+    .barraNavegacion {
+      height: 320px;
+    }
+  }
+  @media (min-width: 1023px) {
+    .barraNavegacion {
+      height: fit-content; 
+    }
+  }
+  
+  .logo {
+    width: 400px;
+    height: 295px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+    border: 5px double silver;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 3s;
+    }
+    
+  @media (min-width:480px) {
+    .logo {
+      width: 300px;
+      height: 255px;
+    }
+  } 
+  @media (min-width:1023px) {
+    .logo {
+      height: 200px;
+      font-size: 1.5em;
+    }
+  }
+
+  .logo__Img {
+    width: 390px;
+    height: 243px;
+  }
+  @media (min-width:480px) {
+    .logo__Img {
+      width: 200px;
+      height: 170px;
+    }
+  } 
+  
+  .headerNavbar {
+    list-style: none;
+    overflow: hidden;
+    font-family: "Hurricane";
+    font-style: italic;
+    font-size: 6em;
+    letter-spacing: 3px;
+    display: flex;
+  }
+ @media (min-width:480px){
+   .headerNavbar {
+     font-size: 5em;
+   }
+ }
+ @media (min-width:768px){
+  .headerNavbar {
+    font-size: 4em;
+  }
+ }
+ @media (min-width:1023px){
+  .headerNavbar {
+    font-size: 3em;
+  }
+ }
+
+  li a,
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 30px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    box-shadow: inset 5px 5px 20px 20px white;
+    color: black;
+  }
+
+  .headerNavbar__dropdownContent {
+    display: none;
+    min-width: 168.91px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px black;
+    position: absolute;
+    background-color: rgba(192, 192, 192, 0.493);
+  }
+  @media (min-width:480px) {
+    .headerNavbar__dropdownContent {
+      background-color: transparent;
+  }
+  }
+
+  .headerNavbar__dropdownContent a {
+    color: white;
+    padding: 3px 19px;
+    text-decoration: none;
+    display: block;
+    min-width: auto;
+    letter-spacing: 5px;
+  }
+  .headerNavbar__dropdownContent a:hover {
+    color: white;
+  }
+
+  .dropdownContent:hover .headerNavbar__dropdownContent {
+    display: block;
+    border-bottom: 1px solid white;
+  }
+
+  .imagenEncabezado {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .TituloHeader {
+    font-family: "Hurricane";
+    color: black;
+    font-size: 10em;
+    letter-spacing: 5px;
+    font-weight:lighter;
+    transform: translateY(270px);
+    transition: 3s;
+  }
+  @media (min-width:480px) {
+    .TituloHeader {
+      transform: none;
+      color: silver;
+    }
+  }
+
+/****SITIO****FOOTER**********************/
+  footer {
+    background-image: url(../Img/wood_1.png);
+    height: 660px;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    /* width: 1080px; */
+  }
+  @media (min-width:480px) {  
+    footer {
+      height: 550px;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 100px;
+    }
+  }
+  @media (min-width:1023px) {  
+    footer {
+      height: 400px;
+      justify-content: space-evenly;
+      margin-top: 200px;
+    }
+  } 
+
+  .footerLogo {
+    width: 400px;
+    height: 295px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+    border: 5px double silver;
+    transition: 3s;
+    margin-right: 10px;
+    margin-right: 20px;
+  }
+  @media (min-width:480px) {
+    .footerLogo {
+      width: 300px;
+      height: 245px;
+      margin: 20px; 
+    }
+  }
+  @media (min-width:1023px) {
+    .footerLogo {
+      width: 300px;
+      height: 220px;
+      font-size: 1.5em;
+    }
+  }
+
+  .contenedorFooterMap {
+    width: 250px;
+    height: 280px;
+    text-align: center;
+    font-size: 3em;
+    color: darkgray;
+    border: 5px solid silver;
+  }
+  @media (min-width: 320px) {
+    .contenedorFooterMap {
+      width: 300px;
+      height: 350px;
+      font-size: 3em;
+    }
+  }
+  @media (min-width: 1023px) {
+    .contenedorFooterMap {
+      width: 300px;
+      height: 300px;
+      font-size: 1.5em;
+    }
+  }
+
+  .footerMap {
+    width: 250px;
+    height: 200px;
+  }
+  @media (min-width:320px) {
+    .footerMap {
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  .footer__NavBar {
+      display: flex;
+      width: 120px;
+      justify-content: space-evenly;
+      transform: translate(-215px,-405px);
+  }
+  @media (min-width:320px) {
+      .footer__NavBar {
+      transform: translate(-270px,-405px);
+    }
+  }
+  @media (min-width:480px) {
+    .footer__NavBar {
+      display: inline-block;
+      width: 170px;
+      transform: none;
+      margin: 0px 40px;
+    }
+  }
+  
+  .footer__NavBar a {
+    font-size: 6em;
+    font-family: "Hurricane", cursive;
+    color: black;
+    display: block;
+    text-decoration: none;
+    border: solid 1px silver;
+    border-radius: 20%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  @media (min-width:480px) {
+  .footer__NavBar a {
+    font-size: 5em;
+    margin-bottom: 13px;
+    margin: 10px;
+    color: white;
+    border: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  }
+  @media (min-width:1023px) {
+    .footer__NavBar a {
+      font-size: 3em;
+    }
+    }
+  .footer__NavBar a:hover {
+    color: rgb(180, 9, 180);
+  }
+
+  .footer__NavBarSocial {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.2);
+    width: 60px;
+    margin-top: 50px;
+  }
+  @media (min-width:480px) {
+    .footer__NavBarSocial {
+      transform: none;
+      margin-top: 0;
+  }
+  }  	
+
+  .footer__NavBarSocial a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 50px;
+    text-align: center;
+    transform: scale(1.5);
+    border: 5px solid silver;
+    border-radius: 50%;
+    width: 60px;
+  }
+  @media (min-width:480px) {
+    .footer__NavBarSocial a {
+      transform: none;
+    }
+  }
+  @media (min-width:1023px) {
+    .footer__NavBarSocial a {
+      margin-bottom: 20px;
+      transform: scale(0.7);
+
+    }
+  }
+
+  .footer__NavBarSocial a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  @media (min-width:480px) {
+  .footer__NavBarSocial a img {
+    width: 60px;
+    height: 60px;
+  }
+  }
+ 
+  .face {
+    background-color: #3b5998;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.face:hover {
+    animation: none;
+  }
+  @keyframes lightf {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .insta {
+    background-color: #bc2a8d;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.insta:hover {
+   animation: none;
+  }
+  .wapp {
+    background-color: #25D366;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.wapp:hover {
+    animation: none;
+  }
+  .mail {
+    background-color: #b2936d;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.mail:hover {
+   animation: none;
+  }
+
+/*SITIO********MAIN*********************/
+  
+  .woodBoardContenedorLogo_Texto {
+    width: fit-content;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .woodBoard__Logo {
+    width: 413px;
+    height: 245px;
+    border-left: 5px double silver;
+    border-right: 5px double silver;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+    transform: translateX(-325px);
+    transition: 3s;
+    margin-top: 3px;
+  }
+  @media (min-width:480px) {
+    .woodBoard__Logo {
+      width: 300px;
+      height: 245px;
+      margin-top: 15px;
+      transform: none;
+      font-size: 3em;
+      border: 5px double silver;
+    }
+  }
+  @media (min-width:1023px) {
+    .woodBoard__Logo {
+      height: 200px;
+      margin-top: 20px;
+      transform: none;
+      font-size: 1.5em;
+      border: 5px double silver;
+    }
+  }
+
+  .woodBoardContenedor__Texto {
+    width: 70%;
+    height: 230px ;
+    text-align: center;
+    color: silver;
+    margin-top: 40px;
+  }
+
+  .woodBoardContenedor__Texto--Titulo {
+    font-size: 4em;
+    font-weight: lighter;
+    font-family: 'Inria Serif', serif;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-decoration: underline solid silver 2px;
+  }
+
+  .woodBoardContenedor__Texto--p {
+    font-style: italic;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    font-family: 'Inria Serif', serif;
+    margin-top: 10px;
+    text-align: justify;
+    border-left: 1px solid silver;
+    padding-left: 10px;
+  }
+  @media (min-width:480px) {
+    .woodBoardContenedor__Texto--p {
+      font-size: 2em;
+    }
+  }
+  @media (min-width:1023px) {
+    .woodBoardContenedor__Texto--p {
+      font-size: 1.5em;
+      margin-top: 40px;
+    }
+  }
+
+  .contenedorParrafo {
+    text-align: justify;
+    font-family: 'Inria Serif', serif;
+    margin: 0 125px;
+  }
+  .contenedorParrafo__Parrafo {
+    color: #7d7f81;
+    font-family: 'Inria Serif', serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+/*PAGINA INDEX**************************************/
+  /*HEADER**************/
+    .indexImgHeader {
+      background-image: url(../Img/IndexHeader.jpg); 
+      background-position: center 14cm ;
+    }
+  /*SECCION BODEGA****************************/
+    .ContenedorWoodBoardBodega {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .woodBoardBodega {
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      height: 525px;
+    }  
+    @media (min-width:480px) {
+      .woodBoardBodega {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      }
+    } 
+
+    .contenedorImgBodega {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      margin-top: 20px;
+    }
+    @media (min-width:480px) {
+      .contenedorImgBodega {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+        margin-top: 35px;
+        margin-right: 30px;
+      }
+    }
+
+    .imgBodega {
+      width: 400px;
+      height: 400px;
+    }
+    @media (min-width:480px) {
+      .imgBodega {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    .botonBodega {
+      color: silver;
+      font-size: 4em;
+      font-style: italic;
+      letter-spacing: 3px;
+      font-family: "Hurricane";
+      font-weight: 100;
+      text-decoration: none;
+      padding: 20px 20px;
+    }
+    .botonBodega:hover:active {
+      cursor: pointer;
+      color: white;
+      transform: scale(1.3,1.3);
+    }
+
+  /*SECCION VIÑEDO*****************/
+    .sectionViñedo {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      height: 620px;
+      text-align: center;
+      margin-top: 600px;
+    }
+    @media (min-width:480px){
+      .sectionViñedo {
+        margin-top: 150px;
+      } 
+    }
+
+    .sectionViñedoTexto--SubTitulo {
+      font-size: 3em;
+      letter-spacing: 3px;
+      font-family: 'Inria Serif', serif;
+      color: silver;
+      text-decoration:underline solid silver 1px;
+    }
+    @media (min-width:1023px) {
+      .sectionViñedoTexto--SubTitulo {
+        font-size: 2em;
+      }
+    }
+
+    .sectionViñedoTexto--Titulo {
+      font-size: 6em;
+      letter-spacing: 3px;
+      font-family: 'Inria Serif', serif;
+      color: black;
+    }
+    @media (min-width:1023px) {
+      .sectionViñedoTexto--Titulo {
+        font-size: 5em;
+      } 
+    }
+
+    .sectionViñedoTexto--p {
+      font-size: 3em;
+      letter-spacing: 2px;
+      font-family: 'Inria Serif', serif;
+      color: grey;
+      margin: 25px 100px 25px 100px;
+      text-align: justify;
+    }
+    @media (min-width:480px) {
+      .sectionViñedoTexto--p {
+        font-size: 2em;
+      }
+    }
+    @media (min-width:480px) {
+      .sectionViñedoTexto--p {
+        font-size: 1.5em;
+      }
+    }
+
+    .sectionViñedo__img {
+      width: 80%;
+      height: 450px;
+      border: 4px solid silver;
+    }
+    @media (min-width:480px) {
+      .sectionViñedo__img {
+        width: 70%;
+        height: 400px;
+      }  
+    }
+    @media (min-width:1023px) {
+      .sectionViñedo__img {
+        width: 50%;
+        height: 350px;
+      }  
+    }
+    .sectionViñedo__img:hover {
+      border: 4px solid black;
+      cursor: pointer;
+    }
+
+  /*SECCION PRODUCTOS************************/
+    .contenedorWoodBoardProductos {
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      grid-column: 1/2;
+      grid-row: 5/6;
+      margin-top: 450px;
+    }
+    @media (min-width:480px) {
+      .contenedorWoodBoardProductos {
+        height: 500px;
+        margin: 150px 0px;
+      }
+    }  
+    @media (min-width:1023px) {
+      .contenedorWoodBoardProductos {
+        height: 500px;
+        margin: 0px;
+      }
+    }  
+
+    .woodBoardProductos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      height: 800px;
+    }  
+    @media (min-width:480px) {
+      .woodBoardProductos {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        margin-top: 100px;
+      }
+    }
+
+    .sectionProductosTexto {
+      width: 90%;
+      height: 90%;
+      text-align: center;
+      font-family: 'Inria Serif', serif;
+      color: silver;
+      margin-top: 15px;
+    }
+    @media (min-width:480px) {
+      .sectionProductosTexto {
+        width: 35%;
+        text-align: center;
+        font-family: 'Inria Serif', serif;
+        margin-top: 0px;
+      }
+    }
+
+    .sectionProductosTexto--Titulo{
+      font-size: 4em;
+      text-decoration: underline;
+    }
+
+    .sectionProductosTexto--p {
+      font-size: 3em;
+      font-family: 'Special Elite', cursive;
+      
+    }
+    @media (min-width:480px) {
+      .sectionProductosTexto--p {
+        font-size: 2.4em;
+        margin-top:15px;
+      } 
+    }
+    @media (min-width:1023px) {
+      .sectionProductosTexto--p {
+        font-size: 2em;
+        margin-top:30px;
+      } 
+    }
+    
+    .contenedorImgProductos {
+      background-color: whitesmoke;
+      height: 450px;
+      width: 500px;
+      box-shadow: inset 1px 1px 40px 15px silver;
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Coming Soon', cursive;
+      margin-bottom: 10px;
+    }
+
+    .imgProductos {
+    width: 350px;
+    height: 400px;
+    box-shadow: 10px 10px 4px silver;
+    }
+    @media (min-width:320px) {
+      .imgProductos {
+      transform: none;
+        
+      } 
+    }
+
+    .imgProductos:hover {
+      cursor: pointer;
+      box-shadow: 10px 10px 4px black;
+    }
+
+/* PAGINA BODEGA****************************/
+  /*HEADER****************/
+    .bodegaImgHeader {
+      background-image: url(../Img/BodegaHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    }
+  /*SECCION HISTORIA Y SECCION VINIFICACION*****************/
+    .historia {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .vinificacion {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contenedorTitulo {
+      text-align: center;
+      font-family: 'Inria Serif', serif;
+      margin-top: 150px;
+    }
+
+    .contenedorTitulo__Titulo {
+      font-weight:100;
+      text-decoration: underline solid silver 2px;
+      letter-spacing: 3px;
+      font-size: 6em;
+    }
+
+    @media (min-width:480px) { /*La clase .contenedorParrafo__Parrafo esta en la ubicación SITIO MAIN**/
+      .contenedorParrafo__Parrafo {
+      font-size: 3em;
+      }
+    }
+    @media (min-width:600px) { 
+      .contenedorParrafo__Parrafo {
+        font-size: 2.5em;
+      }
+    }
+    @media (min-width:768px) { 
+      .contenedorParrafo__Parrafo {
+        font-size: 2em;
+      }
+    }
+    @media (min-width:1023px) { 
+      .contenedorParrafo__Parrafo {
+        font-size: 1.5em;
+      }
+    }
+    
+    .contenedorImagenesBodega {
+      border: 1px solid silver;
+      width:  1100px;
+      height: 275px;
+      margin: 100px 0px;
+    }
+    .contenedorImagenes__Img1234 {
+      height: 275px;
+      width: 275px;
+    } 
+
+  /*SECCION WOODBOARD***/
+    .contenedorWoodboardPaginaBodega {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      height: 1700px;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+    }
+    @media (min-width:480px) {
+      .contenedorWoodboardPaginaBodega {
+        height: 500px;
+      }
+    }
+
+    .woodBoardPaginaBodega {
+      width: 100%;
+      background-image: url("../Img/wood_1.png");
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width:480px) {
+      .woodBoardPaginaBodega {
+        width: 1080px;
+        flex-direction: row;
+      }
+    } 
+
+    .contenedorVideoTexto__Video {
+      height: 1200px;
+      width:100%;
+      background-image: url("../Img/wood_1.png");
+      margin-top: 25px;
+    }
+    @media (min-width:480px) {
+      .contenedorVideoTexto__Video {
+        height: 450px;
+        width:400px;
+        margin: 20px 50px 20px 0px;
+      }
+    }
+      
+/*PAGINA VIÑEDO***************************/
+  /*HEADER******/
+    .viñedoImgHeader {
+      background-image: url(../Img/ViñedoHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    }
+
+  /*SECCION TEXTO PRINCIPAL******/
+    .textoViñedo {
+      margin-top: 150px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      }
+
+  /*SECCION WOODBOARD****/
+    .contenedorWoodboardPaginaViñedo {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      height: 1050px;
+    }
+    @media (min-width:480px) {
+      .contenedorWoodboardPaginaViñedo {
+        height: 650px;
+      }
+    }
+
+    .woodBoardPaginaViñedo {
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 950px;
+    }
+    @media (min-width:480px) {
+      .woodBoardPaginaViñedo {
+        flex-direction: row;
+        height: 500px;
+      }
+    }
+
+    .WoodBoardContenedorImgViñedo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      margin-top: 55px;
+      height: 500px;
+    }
+    @media (min-width: 480px) {
+      .WoodBoardContenedorImgViñedo {
+        width: 500px;
+        height: 100%;
+        margin:0px;
+      }   
+    }
+
+    .woodBoardImgViñedo {
+      width: 500px;
+      height: 100%;
+    }
+   
+  /* SECCION IMAGENES */
+    .ContenedorImagenesViñedo {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      height: 1270px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 840px;
+      margin-left: 120px;
+    }
+    @media (min-width: 480px) {
+      .ContenedorImagenesViñedo {
+        width: fit-content;
+        flex-wrap: nowrap;
+        height: 300px;
+        width: 100%;
+        margin: 0px;
+      } 
+    }
+
+    .contenedorImagenes__Img12345 {
+      height: 400px;
+      width: 400px;
+      margin: 10px;
+      }
+
+    @media (min-width: 480px) {
+      .contenedorImagenes__Img12345 {
+      height: 166.5px;
+      width: 215.838px;
+      margin: 0px;
+      transition: 3s;
+      }
+    }
+
+/*PÁGINA PRODUCTOS************/
+  /*HEADER******/
+    .productosImgHeader {
+      background-image: url(../Img/ProductosHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    }
+
+    /*SECCION TEXTO PRINCIPAL******/
+    .textoProductos {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-top: 150px;
+    }
+
+  /* SECCION WOODBOARD */
+    .contenedorWoodBoardPaginaProductos {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      height: 1200px; 
+    }
+    @media (min-width:480px) { 
+      .contenedorWoodBoardPaginaProductos {
+      height: 500px;
+      }
+    }
+
+    .woodBoardPaginaProductos {
+      width: 1080px;
+      background-image: url("../Img/wood_1.png");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1150px;
+    }
+    @media (min-width:480px) {
+      .woodBoardPaginaProductos {
+        flex-direction: row;
+        height: 500px;
+      }
+    }
+
+    .WoodBoardContenedorImgProductos{
+      height: 550px;
+      width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    @media (min-width:480px) {
+      .WoodBoardContenedorImgProductos {
+        margin: 0px;
+      }
+    }
+    
+    .woodBoardImgProducto {
+      width: 450px;
+      height: 500px;
+      margin-left: 50px;
+    }
+
+/*PAGINA CONTACTO***********/
+  /*HEADER****/
+    .contactoImgHeader {
+      background-image: url(../Img/ContactoHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    }
+
+  /*CONTENEDOR LINKS A REDES SOCIALES****** */
+    .ContenedorSocialMediaIcons {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-top: 150px;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ContenedorSocialMediaIcons1234 {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+    .ContenedorSocialMediaIcons1234:hover {
+      border: 2px solid black;
+      padding: 2px;
+    }
+    .ContenedorSocialMediaIcons1:hover {
+      background-color: #bc2a8d;
+    }
+    .ContenedorSocialMediaIcons2:hover {
+      background-color: #3b5998;
+    }
+    .ContenedorSocialMediaIcons3:hover {
+      background-color: #25D366;
+    }
+    .ContenedorSocialMediaIcons4:hover {
+      background-color: #b2936d;;
+    }
+
+  /***SECCION FORMULARIO */
+    .form {
+      grid-column: 1/2;
+      grid-row: 4/6;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 800px;
+      text-align: center;
+    }
+
+    .form__NombreTelefono{
+      width: 314px;
+      height: 45.2px;
+      font-family: 'Inria Serif', serif;
+      font-size: 4em;
+      letter-spacing: 2px;
+      border: 0;
+      padding: 5.4px 33px;
+      font-weight: 100;
+      margin: 0px 8px 40px 8px;
+    }
+    @media (min-width: 320px) {
+      .form__NombreTelefono {
+      font-size: 3em;
+      }
+    }
+    @media (min-width: 480px) {
+      .form__NombreTelefono {
+        font-size: 2.5em;
+      }
+    }
+
+    .form__Mail {
+      width: 600px;
+    }
+    @media (min-width:320px) {
+      .form__Mail {
+        width: 710px;
+      }
+    } 
+    @media (min-width:480px) {
+      .form__Mail {
+        width: 800px;
+      }
+    } 
+    
+    .form__Msj {
+      width: 600px;
+      height: 150px;
+    }
+    @media (min-width:320px) {
+      .form__Msj {
+        width: 710px;
+        height: 150px;
+      }
+    }   
+    @media (min-width:480px) {
+      .form__Msj {
+        width: 800px;
+        height: 150px;
+      }
+    } 
+
+    .form__Btn{
+      padding: 30px 175px;
+      background-color: #7d7f81;
+      color: white;
+      border: 0;
+      font-family: 'Inria Serif', serif;
+      font-size: 4em;
+      letter-spacing: 10px;
+    }
+    @media (min-width: 320px) {
+      .form__Btn {
+        font-size: 3em;
+      }
+    }
+    @media (min-width: 480px) {
+      .form__Btn {
+        font-size: 2.5em;
+      }
+    }
+    .form__Btn:hover {
+      cursor: pointer;
+      background-color: white;
+      color:#7d7f81;
+      border: 2px solid #7d7f81;
+      font-weight: 800;
+    }
+
+    .form__NombreTelefono:focus {
+      background-color: #7d7f8175;
+      color: white;
+    }
+
+    .footerContacto {
+      width: 1080px;
+    }
+    @media (min-width:1023px) {
+      .footerContacto {
+      width: 1350px;
+      }
+    }
