@@ -514,7 +514,7 @@
   /*HEADER**************/
     .indexImgHeader {
       background-image: url(../Img/IndexHeader.jpg); 
-      background-position: center 14cm ;
+      background-position: center 14cm;
     }
   /*SECCION BODEGA****************************/
     .ContenedorWoodBoardBodega {
@@ -1014,7 +1014,7 @@
     }
     @media (min-width:480px) { 
       .contenedorWoodBoardPaginaProductos {
-      height: 500px;
+      height: 600px;
       }
     }
 
@@ -1029,7 +1029,7 @@
     @media (min-width:480px) {
       .woodBoardPaginaProductos {
         flex-direction: row;
-        height: 500px;
+        height: 600px;
       }
     }
 
