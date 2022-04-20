@@ -15,7 +15,7 @@
 /*BODY+++++++CONTENEDOR PRINCIPAL*/
   .contenedorPrincipal {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1350px;
     grid-template-rows: repeat(6,auto);
   }
   
@@ -208,11 +208,11 @@
     margin-top: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
   @media (min-width:480px) {  
     footer {
       height: 550px;
-      justify-content: flex-start;
       align-items: center;
       margin-top: 100px;
     }
@@ -1228,11 +1228,11 @@
       color: white;
     }
 
-    .footerContacto {
+    /* .footerContacto {
       width: 1080px;
     }
     @media (min-width:1023px) {
       .footerContacto {
       width: 1350px;
       }
-    }
+    } */
