@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Smooch+Sans:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/****SITIO******/
+/*HEADER****/
+  nav {
+      background-image: url(../img/wood_1.png);
+  }
+  .headerNavbar {
+      font-family: "Hurricane";
+      font-style: italic;
+      font-size: 1em;
+      letter-spacing: 3px;
+  }
+  @media (min-width:260px) {
+  .headerNavbar {
+          font-size: 1.5em;
+      }    
+  }
+  @media (min-width:768px) {
+      .headerNavbar {
+          font-size: 2em;
+      }    
+  } 
+  .navegacion {
+    flex-basis: 20%;
+  } 
+  .headerNavbar_Nav {
+      width: fit-content;
+  }
+  .backgroundDropDown {
+      font-size: 1em;
+      background-color: rgba(192, 192, 192, 0.548);
+      white-space: pre-wrap;
+  }
+  @media (min-width:400px) {
+    .backgroundDropDown {
+          font-size: 1.5em;
+      }    
+  }  
+  .burguerIcon {
+      background-color: silver;
+      border: none;
+      border-radius: 20%;
+      animation-name: colorTilt;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes colorTilt {
+    0% {opacity: 0; background-color: silver; box-shadow: none;}
+    50% {opacity: 1; background-color: rgb(180, 9, 180); box-shadow: 5px 5px 20px 10px rgba(180, 9, 180, 0.63);}
+    100% {opacity: 0; background-color: silver; box-shadow: none;}
+  }
+
+  .logo {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  transition: 3s;
+  animation-name: logoFadeIn;
+  animation-duration: 5s;
+  }
+  .logo__Img {
+      width: 200px;
+      height: 170px;
+  }
+  @keyframes logoFadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+  .imgEncabezado {
+      height: 350px;
+      font-family: "Hurricane";
+      letter-spacing: 5px;
+      font-weight:lighter;
+      color: silver;
+  }
+  .imgEncabezado h1 {
+      font-size: 2em;
+  }
+  @media (min-width:260px) {
+      .imgEncabezado h1 {
+            font-size: 5em;
+        }    
+    }
+  @media (min-width:400px) {
+    .imgEncabezado h1 {
+          font-size: 8em;
+      }    
+  }
+
+  /*FOOTER****/
+  footer {
+    background-image: url(../Img/wood_1.png);
+  }
+
+  .footer__NavBar a {
+    font-size: 2em;
+    font-family: "Hurricane", cursive;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .footer__NavBarSocial a {
+  border: 5px solid silver;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  }
+  .footer__NavBarSocial a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
+
+  .face {
+    background-color: #3b5998;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.face:hover {
+    animation: none;
+  }
+  @keyframes lightf {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .insta {
+    background-color: #bc2a8d;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.insta:hover {
+   animation: none;
+  }
+  .wapp {
+    background-color: #25D366;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.wapp:hover {
+    animation: none;
+  }
+  .mail {
+    background-color: #b2936d;
+    animation-name: lightf;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+  }
+  img.mail:hover {
+   animation: none;
+  }
+
+
+/****MAIN*************/
+  .woodBoard {
+  background-image: url("../Img/wood_1.png");
+  }  
+  .woodBoardTitulo {
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: 'Inria Serif', serif;
+    letter-spacing: 3px;
+    text-decoration: underline solid silver 2px;
+    color: silver;
+  }
+
+  .woodBoardParrafo {
+    font-style: italic;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-family: 'Inria Serif', serif;
+    text-align: justify;
+    color: silver;
+  }
+
+  .parrafo {
+    text-align: justify;
+    font-family: 'Inria Serif', serif;
+    padding: 20px 50px;
+    color: #7d7f81;
+    font-size: 1em;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+
+/*****PAGINA_INDEX*****/
+  /*SECCION_HEADER**/
+    .imgEncabezadoIndex {
+        background-image: url(../img/IndexHeader.jpg);
+        background-position: center 14cm;
+
+    }
+  /*SECCION_BODEGA Y PRODUCTOS************/    
+    .botonWoodBoard {
+      color: silver;
+      font-size: 2em;
+      font-style: italic;
+      letter-spacing: 3px;
+      font-family: "Hurricane";
+      font-weight: 100;
+      padding: 20px 20px;
+      animation-name: fadeIn;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    @media (min-width:576px) {
+      .botonWoodBoard {
+      font-size: 4em;
+      }
+    }
+      .botonWoodBoard:hover {
+      cursor: pointer;
+      animation: none;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+  /*SECCION_VIÑIEDO**************/
+    .sectionViñedoSubTitulo {
+      font-size: 2em;
+      letter-spacing: 3px;
+      font-family: 'Inria Serif', serif;
+      color: silver;
+      text-decoration:underline solid silver 1px;
+    }
+
+    .sectionViñedoTitulo {
+      font-size: 3.5em;
+      letter-spacing: 3px;
+      font-family: 'Inria Serif', serif;
+      color: black;
+    }
+
+    .sectionViñedoParrafo {
+      font-size: 0.6em;
+      letter-spacing: 2px;
+      font-family: 'Inria Serif', serif;
+      color: grey;
+      text-align: justify;
+      text-transform: uppercase;
+    }
+    @media (min-width:768px) {
+      .sectionViñedoParrafo {
+        font-size: 1em;
+      }
+    }
+
+/****PAGINA_BODEGA*********/
+  /*SECCION_HEADER**/  
+  .imgEncabezadoBodega {
+    background-image: url(../img/BodegaHeader.jpg);
+    background-position: center;
+    background-size: cover;
+  }  
+
+  /*SECCION_HISTORIA_Y_SECCION_VINIFICACION*****************/
+    .titulo {
+      font-family: 'Inria Serif', serif;
+      font-weight:100;
+      text-decoration: underline solid silver 2px;
+      letter-spacing: 3px;
+      font-size: 1.5em;
+    }
+    @media (min-width:768px) {
+      .titulo {
+        font-size: 4em;
+      }
+    }
+
+    /*SECCION_IMAGENES***********/
+    .contenedorImagenes__Img1234 {
+      height: 275px;
+      width: 275px;
+    } 
+    .contenedorImagenes__Img1234:hover {
+      height: 350px;
+      width:350px;
+      transition: 5s;
+      border: 5px solid white;;
+    }
+
+/****PAGINA_VINIEDO******/
+  /*SECCION_HEADER**/  
+    .imgEncabezadoViñedo {
+      background-image: url(../img/ViñedoHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    }
+    .imgWoodBoardViñedo {
+      height: 100%;
+    }
+    /*SECCION_IMAGENES**/
+    .contenedorImagenes__Img12345 {
+      height: 166.5px;
+      width: 224.832px;}
+
+/****PAGINA_PRODUCTOS***/  
+  /*SECCION_ENCABEZADO**/
+    .imgEncabezadoProductos {
+      background-image: url(../img/ProductosHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    } 
+  /*SECCION_CARRUSEL_IMG**/
+    .slidesSize {
+      height: 500px;
+    }
+    
+/****PAGINA_CONTACTO*****/
+ /*SECCION_ENCABEZADO**/
+    .imgEncabezadoContacto {
+      background-image: url(../img/ContactoHeader.jpg); 
+      background-position: center;
+      background-size: cover;
+    } 
+
+  /*SECCION_FORMULARIO**/
+    .formInputs{
+      font-family: 'Inria Serif', serif;
+      font-size: 4em;
+      letter-spacing: 2px;
+      padding: 5.4px 33px;
+      font-weight: 100;
+      border: 1px solid rgba(192, 192, 192, 0.452);
+    }
+
+    .formInputs__TextArea{
+      font-family: 'Inria Serif', serif;
+      font-size: 1em;
+      letter-spacing: 2px;
+      font-weight: 100;
+      border: 1px solid rgba(192, 192, 192, 0.452);
+    }
