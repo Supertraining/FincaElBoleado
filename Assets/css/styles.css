@@ -9,7 +9,7 @@
 /****SITIO******/
 /*HEADER****/
   nav {
-      background-image: url(../img/wood_1.png);
+      background-image: url(../Img/wood_1.png);
   }
   .headerNavbar {
       font-family: "Hurricane";
@@ -96,7 +96,7 @@
 
   /*FOOTER****/
   footer {
-    background-image: url(../img/wood_1.png);
+    background-image: url(../Img/wood_1.png);
   }
 
   .footer__NavBar a {
@@ -167,7 +167,7 @@
 
 /****MAIN*************/
   .woodBoard {
-  background-image: url(../img/wood_1.png);
+  background-image: url(../Img/wood_1.png);
   }  
   .woodBoardTitulo {
     font-size: 2em;
@@ -202,7 +202,7 @@
 /*****PAGINA_INDEX*****/
   /*SECCION_HEADER**/
     .imgEncabezadoIndex {
-        background-image: url(../img/IndexHeader.jpg);
+        background-image: url(../Img/IndexHeader.jpg);
         background-position: center 14cm;
 
     }
@@ -266,7 +266,7 @@
 /****PAGINA_BODEGA*********/
   /*SECCION_HEADER**/  
   .imgEncabezadoBodega {
-    background-image: url(../img/BodegaHeader.jpg);
+    background-image: url(../Img/BodegaHeader.jpg);
     background-position: center;
     background-size: cover;
   }  
@@ -300,7 +300,7 @@
 /****PAGINA_VINIEDO******/
   /*SECCION_HEADER**/  
     .imgEncabezadoViñedo {
-      background-image: url(../img/ViñedoHeader.jpg); 
+      background-image: url(../Img/ViñedoHeader.jpg); 
       background-position: center;
       background-size: cover;
     }
@@ -315,7 +315,7 @@
 /****PAGINA_PRODUCTOS***/  
   /*SECCION_ENCABEZADO**/
     .imgEncabezadoProductos {
-      background-image: url(../img/ProductosHeader.jpg); 
+      background-image: url(../Img/ProductosHeader.jpg); 
       background-position: center;
       background-size: cover;
     } 
@@ -327,7 +327,7 @@
 /****PAGINA_CONTACTO*****/
  /*SECCION_ENCABEZADO**/
     .imgEncabezadoContacto {
-      background-image: url(../img/ContactoHeader.jpg); 
+      background-image: url(../Img/ContactoHeader.jpg); 
       background-position: center;
       background-size: cover;
     } 
