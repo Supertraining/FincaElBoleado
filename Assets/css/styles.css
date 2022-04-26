@@ -96,7 +96,7 @@
 
   /*FOOTER****/
   footer {
-    background-image: url(../Img/wood_1.png);
+    background-image: url(../img/wood_1.png);
   }
 
   .footer__NavBar a {
@@ -167,7 +167,7 @@
 
 /****MAIN*************/
   .woodBoard {
-  background-image: url("../Img/wood_1.png");
+  background-image: url(../img/wood_1.png);
   }  
   .woodBoardTitulo {
     font-size: 2em;
