@@ -28,7 +28,7 @@
       }    
   } 
   .navegacion {
-    flex-basis: 20%;
+    flex-basis: 0%;
   } 
   .headerNavbar_Nav {
       width: fit-content;
