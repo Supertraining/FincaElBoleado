@@ -390,14 +390,6 @@
       75% {border-radius: 40%;}
       100% {border-radius: 10%;}
     }
-
-
-    @media (max-width:576px) {
-      .imgRadius {
-        border-radius: 0%;
-      }
-    }
-
     
 /****PAGINA_CONTACTO*****/
  /*SECCION_ENCABEZADO**/
