@@ -17,10 +17,12 @@
       font-style: italic;
       font-size: 1.5em;
       letter-spacing: 3px;
+      
     }
     @media (min-width:768px) {
       .headerNavbar {
         font-size: 2em;
+        height: 270px;
         }    
     } 
 
@@ -237,8 +239,8 @@
   /*SECCION_HEADER**/
     .imgEncabezadoIndex {
         background-image: url(../Img/IndexHeader.jpg);
-        background-position: center 14cm;
-
+        background-position: center;
+        background-size: cover;
     }
   /*SECCION_BODEGA Y PRODUCTOS************/    
     .botonWoodBoard {
@@ -299,11 +301,7 @@
     }
     .img {
       width: 450px;
-    }
-    .img1:hover {
-    transform: scale(1.1);
-    transition: 5s;
-    box-shadow: -10px 10px 10px #3b589886
+      box-shadow: -10px 10px 10px #3b589886
     }
 
 /****PAGINA_BODEGA*********/
