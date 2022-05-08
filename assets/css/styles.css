@@ -363,7 +363,7 @@ footer .footer__NavBarSocial a .mail:hover {
 /******INDEX****/
 /*****HEADER****/
 .imgEncabezadoIndex {
-  background-image: url(../img/IndexHeader.jpg);
+  background-image: url(../../../img/IndexHeader.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -500,7 +500,7 @@ footer .footer__NavBarSocial a .mail:hover {
 /****PAGINA_VINIEDO******/
 /*SECCION_HEADER**/
 .imgEncabezadoViñedo {
-  background-image: url(../Img/ViñedoHeader.jpg);
+  background-image: url(../img/ViñedoHeader.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -515,7 +515,7 @@ footer .footer__NavBarSocial a .mail:hover {
 /****PAGINA_PRODUCTOS***/
 /*SECCION_ENCABEZADO**/
 .imgEncabezadoProductos {
-  background-image: url(../Img/ProductosHeader.jpg);
+  background-image: url(../img/ProductosHeader.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -619,7 +619,7 @@ footer .footer__NavBarSocial a .mail:hover {
 /****PAGINA_CONTACTO*****/
 /*SECCION_ENCABEZADO**/
 .imgEncabezadoContacto {
-  background-image: url(../Img/ContactoHeader.jpg);
+  background-image: url(../img/ContactoHeader.jpg);
   background-position: center;
   background-size: cover;
 }
