@@ -363,7 +363,7 @@ footer .footer__NavBarSocial a .mail:hover {
 /******INDEX****/
 /*****HEADER****/
 .imgEncabezadoIndex {
-  background-image: url(../../../img/IndexHeader.jpg);
+  background-image: url(../img/IndexHeader.jpg);
   background-position: center;
   background-size: cover;
 }
