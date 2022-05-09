@@ -1,0 +1,19 @@
+{
+  "name": "bodegafincaelboleadomaranga",
+  "version": "1.0.0",
+  "description": "Listado de META Keywords:\r Vino\r Córdoba\r Cordobés \r Cordobesa\r Bonarda\r Syrah\r Viognier\r Vermouth\r Bodega\r Artesanal\r Orgánico\r Alta \r Calidad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Supertraining/FincaElBoleado.git"
+  },
+  "author": "MarangaMatías",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Supertraining/FincaElBoleado/issues"
+  },
+  "homepage": "https://github.com/Supertraining/FincaElBoleado#readme"
+}

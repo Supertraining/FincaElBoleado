@@ -1,3 +1,4 @@
+MEJORANDO EL SEO.
 Listado de META Keywords:
 Vino
 Córdoba
@@ -29,5 +30,18 @@ OPTIMIZACIÓN DE IMÁGENES:
 - Se comprimieron todas las imágenes con optimizilla (compresor on-line).
 - Se optimizo el tamaño de la imágenes, incluidos los iconos de las redes sociales, con Pixlr X (editor de imágenes on-line.)
 - Se completan todos los textos Alternativos y se incluyen Keywords en ellos. 
+
+CREACION DE SITEMAP:
+- Se crea un mapa de sitio en https://www.xml-sitemaps.com/
+
+MIXIN: 
+- Se creo y utilizo en el archivo scss/sitio/_main.scss
+
+EXTEND: 
+- Se puso en practica en el archivo scss/sitio/index/index.scss
+
+MAP-GET:
+-  Se creo en el archivo variables, se llamo con map-get en scss/sitio/index/index.scss
+
 
 
