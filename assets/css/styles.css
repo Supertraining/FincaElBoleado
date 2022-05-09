@@ -577,12 +577,11 @@ footer .footer__NavBarSocial a .mail:hover {
 
 .imgRadius {
   border-radius: 10%;
-  -webkit-box-shadow: inset 30px 30px 30px 20px #7d7f8157;
-          box-shadow: inset 30px 30px 30px 20px #7d7f8157;
   -webkit-animation-name: scaleFoto;
           animation-name: scaleFoto;
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
+  border: 5px dotted black;
 }
 
 @-webkit-keyframes scaleFoto {

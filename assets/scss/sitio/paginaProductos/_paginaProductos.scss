@@ -20,9 +20,9 @@
 }
   .imgRadius {
     border-radius: 10%;
-    box-shadow:inset 30px 30px 30px 20px #7d7f8157;
     animation-name: scaleFoto;
     animation-duration: 8s;
+    border: 5px dotted black;
   
   @keyframes scaleFoto {
     0% {border-radius: 50%;}
