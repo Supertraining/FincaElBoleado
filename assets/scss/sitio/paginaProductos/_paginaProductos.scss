@@ -28,7 +28,7 @@
     color: #dbdbdb;
     font-family: 'Junge', serif;
     background-color: black;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 40px 40px;
     border-top: 4px solid silver;
     transform: translate(0px,35px);
     margin: 0;
@@ -39,6 +39,26 @@
     
   }
 }
+  @media (max-width: 576px) {
+    .slidesSize h5 {
+      font-size: 1em;
+    }
+    .slidesSize p {
+      font-size: 0.8em;
+      border-radius: 0px 0px 40px 40px;
+    }
+  }
+  @media (max-width: 480px) {
+    .slidesSize p {
+      border-radius: 0px 0px 35px 35px;
+    }
+  }
+  @media (max-width: 320px) {
+    .slidesSize p {
+      border-radius: 0px 0px 25px 25px;
+    }
+  }
+
   .imgRadius {
     border-radius: 10%;
     animation-name: scaleFoto;
@@ -51,4 +71,9 @@
     75% {border-radius: 40%;}
     100% {border-radius: 10%;}
   }
+}
+.carousel-caption {
+  right: 0%;
+  left: 0%;
+  margin: 0px 5px;
 }

@@ -290,11 +290,9 @@ footer .footer__NavBarSocial a .mail:hover {
           animation-duration: 5s;
 }
 
-.logo img:hover {
+.logo img {
   -webkit-box-shadow: 7px 7px #999;
           box-shadow: 7px 7px #999;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .logo img:active {
@@ -400,8 +398,13 @@ footer .footer__NavBarSocial a .mail:hover {
   transition: 5s;
 }
 
+.botonViñedo div {
+  bottom: 8px;
+  right: 16px;
+}
+
 /****SECCION BODEGA****/
-.botonWoodBoardBodega, .botonWoodBoardProductos {
+.botonWoodBoardBodega, .botonViñedo, .botonWoodBoardProductos {
   color: silver;
   font-size: 2em;
   font-style: italic;
@@ -413,11 +416,9 @@ footer .footer__NavBarSocial a .mail:hover {
           animation-name: fadeIn;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
-.botonWoodBoardBodega:hover, .botonWoodBoardProductos:hover {
+.botonWoodBoardBodega:hover, .botonViñedo:hover, .botonWoodBoardProductos:hover {
   cursor: pointer;
   -webkit-animation: none;
           animation: none;
@@ -426,8 +427,12 @@ footer .footer__NavBarSocial a .mail:hover {
           transform: scale(1.02);
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-text-stroke: 0.7px black;
+  -webkit-text-stroke: 1.5px black;
   color: transparent;
+}
+
+.botonWoodBoardBodega:hover .fa-solid, .botonViñedo:hover .fa-solid, .botonWoodBoardProductos:hover .fa-solid {
+  display: inline-block;
 }
 
 @-webkit-keyframes fadeIn {
@@ -435,10 +440,10 @@ footer .footer__NavBarSocial a .mail:hover {
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -447,15 +452,21 @@ footer .footer__NavBarSocial a .mail:hover {
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
+.botonWoodBoardBodega .fa-solid, .botonViñedo .fa-solid, .botonWoodBoardProductos .fa-solid {
+  font-size: 0.4em;
+  margin-left: 10px;
+  display: none;
+}
+
 @media (min-width: 576px) {
-  .botonWoodBoardBodega, .botonWoodBoardProductos {
+  .botonWoodBoardBodega, .botonViñedo, .botonWoodBoardProductos {
     font-size: 4em;
   }
 }
@@ -464,12 +475,6 @@ footer .footer__NavBarSocial a .mail:hover {
 .botonWoodBoardProductos {
   border: 1px solid silver;
   margin: 10px;
-}
-
-.botonWoodBoardProductos:hover {
-  background-color: rgba(0, 255, 255, 0.137);
-  -webkit-transition: 5s;
-  transition: 5s;
 }
 
 /******BODEGA****/
@@ -590,7 +595,7 @@ footer .footer__NavBarSocial a .mail:hover {
   color: #dbdbdb;
   font-family: 'Junge', serif;
   background-color: black;
-  border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px 40px 40px;
   border-top: 4px solid silver;
   -webkit-transform: translate(0px, 35px);
           transform: translate(0px, 35px);
@@ -603,6 +608,28 @@ footer .footer__NavBarSocial a .mail:hover {
   width: -moz-fit-content;
   width: fit-content;
   overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .slidesSize h5 {
+    font-size: 1em;
+  }
+  .slidesSize p {
+    font-size: 0.8em;
+    border-radius: 0px 0px 40px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slidesSize p {
+    border-radius: 0px 0px 35px 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slidesSize p {
+    border-radius: 0px 0px 25px 25px;
+  }
 }
 
 .imgRadius {
@@ -642,6 +669,12 @@ footer .footer__NavBarSocial a .mail:hover {
   100% {
     border-radius: 10%;
   }
+}
+
+.carousel-caption {
+  right: 0%;
+  left: 0%;
+  margin: 0px 5px;
 }
 
 /******CONTACTO****/
