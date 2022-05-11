@@ -43,5 +43,7 @@ EXTEND:
 MAP-GET:
 -  Se creo en el archivo variables, se llamo con map-get en scss/sitio/index/index.scss
 
-
+11/05/2022
+- Se crea el archivo package.json
+- Se sube el sitio a https://fincaelboleado.000webhostapp.com/
 

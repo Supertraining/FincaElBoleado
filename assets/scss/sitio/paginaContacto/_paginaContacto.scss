@@ -1,50 +1,49 @@
-/****PAGINA_CONTACTO*****/
-    /*SECCION_ENCABEZADO**/
-        .imgEncabezadoContacto {
-        background-image: url(../img/ContactoHeader.jpg); 
-        background-position: center;
-        background-size: cover;
-        } 
+/*SECCION_ENCABEZADO**/
+    .imgEncabezadoContacto {
+    background-image: url(../img/ContactoHeader.jpg); 
+    background-position: center;
+    background-size: cover;
+    } 
 
-    /*SECCION_FORMULARIO**/
-        form {
+/*SECCION_FORMULARIO**/
+    form {
 
-            div {
-                animation-name: inputTilt;
-                animation-duration: 6s;
-                animation-iteration-count: 1;
-                box-shadow: 1px 1px 5px black;
-                
-                @keyframes inputTilt {
-                    0% {opacity: 0;}
-                    20% {opacity: 0; box-shadow: 50px 50px 20px black;}
-                    50% {opacity: 1; box-shadow: 40px 40px 5px black;}
-                    55% {opacity: 1; box-shadow: 20px 20px 20px black;}
-                    60% {opacity: 1; box-shadow: 10px 10px 5px black;}
-                    65% {opacity: 1; box-shadow: 8px 8px 5px black;}
-                    70% {opacity: 1; box-shadow: 6px 6px 20px black;}
-                    75% {opacity: 1; box-shadow: 4px 4px 5px black;}
-                    80% {opacity: 1; box-shadow: 2px 2px 20px black;}
-                    85% {opacity: 0; box-shadow: 1px 1px 5px black;}
-                    90% {opacity: 1; box-shadow: 1px 1px 5px black;}
-                    95% {opacity: 1; box-shadow: 1px 1px 5px black;}
-                    100% {opacity: 1; box-shadow: 1px 1px 5px black;}
-                    }
-                Input{
-                    font-family: 'Inria Serif', serif;
-                    font-size: 4em;
-                    letter-spacing: 2px;
-                    padding: 5.4px 33px;
-                    font-weight: 100;
-                    border: 1px solid rgba(192, 192, 192, 0.452);
+        div {
+            animation-name: inputTilt;
+            animation-duration: 6s;
+            animation-iteration-count: 1;
+            box-shadow: 1px 1px 5px black;
+            
+            @keyframes inputTilt {
+                0% {opacity: 0;}
+                20% {opacity: 0; box-shadow: 50px 50px 20px black;}
+                50% {opacity: 1; box-shadow: 40px 40px 5px black;}
+                55% {opacity: 1; box-shadow: 20px 20px 20px black;}
+                60% {opacity: 1; box-shadow: 10px 10px 5px black;}
+                65% {opacity: 1; box-shadow: 8px 8px 5px black;}
+                70% {opacity: 1; box-shadow: 6px 6px 20px black;}
+                75% {opacity: 1; box-shadow: 4px 4px 5px black;}
+                80% {opacity: 1; box-shadow: 2px 2px 20px black;}
+                85% {opacity: 0; box-shadow: 1px 1px 5px black;}
+                90% {opacity: 1; box-shadow: 1px 1px 5px black;}
+                95% {opacity: 1; box-shadow: 1px 1px 5px black;}
+                100% {opacity: 1; box-shadow: 1px 1px 5px black;}
                 }
-                textarea{
-                    animation-name: inputTilt;
-                    font-family: 'Inria Serif', serif;
-                    font-size: 1em;
-                    letter-spacing: 2px;
-                    font-weight: 100;
-                    border: 1px solid rgba(192, 192, 192, 0.452);
-                    }
-                    }
-                    }
+            Input{
+                font-family: 'Inria Serif', serif;
+                font-size: 4em;
+                letter-spacing: 2px;
+                padding: 5.4px 33px;
+                font-weight: 100;
+                border: 1px solid rgba(192, 192, 192, 0.452);
+            }
+            textarea{
+                animation-name: inputTilt;
+                font-family: 'Inria Serif', serif;
+                font-size: 1em;
+                letter-spacing: 2px;
+                font-weight: 100;
+                border: 1px solid rgba(192, 192, 192, 0.452);
+                }
+                }
+                }
