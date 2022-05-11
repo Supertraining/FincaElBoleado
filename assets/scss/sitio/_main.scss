@@ -18,7 +18,7 @@
     }
             
   .parrafo {
-  @include textoPropiedadesPrincipales(1em,normal ,$tituloYparrafosFont ,none ,$colorPrimario ,2px, justify);
+  @include textoPropiedadesPrincipales(1em,normal ,$tituloYparrafosFont ,none ,#b5b7b9 ,2px, justify);
 }
 
 

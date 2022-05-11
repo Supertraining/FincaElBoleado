@@ -80,6 +80,10 @@ header nav .burguerIcon {
   }
 }
 
+header nav .navbar-toggler {
+  width: 120px;
+}
+
 header nav .navegacion {
   -ms-flex-preferred-size: 0%;
       flex-basis: 0%;
@@ -338,7 +342,7 @@ footer .footer__NavBarSocial a .mail:hover {
   font-weight: normal;
   font-family: "Inria Serif", serif;
   text-decoration: none;
-  color: silver;
+  color: #b5b7b9;
   letter-spacing: 2px;
   text-align: justify;
 }
@@ -385,7 +389,6 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 .img {
-  width: 450px;
   -webkit-box-shadow: -10px 10px 10px #3b589886;
           box-shadow: -10px 10px 10px #3b589886;
 }
@@ -525,8 +528,8 @@ footer .footer__NavBarSocial a .mail:hover {
   height: 500px;
   -webkit-animation-name: imgFade;
           animation-name: imgFade;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes imgFade {
@@ -537,13 +540,13 @@ footer .footer__NavBarSocial a .mail:hover {
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   75% {
     opacity: 0.8;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
@@ -560,13 +563,13 @@ footer .footer__NavBarSocial a .mail:hover {
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   75% {
     opacity: 0.8;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
@@ -575,12 +578,39 @@ footer .footer__NavBarSocial a .mail:hover {
   }
 }
 
+.slidesSize h5 {
+  color: #353535;
+  font-family: 'Junge', serif;
+  font-size: 3em;
+  font-weight: bold;
+  -webkit-text-stroke: 0.01px white;
+}
+
+.slidesSize p {
+  color: #dbdbdb;
+  font-family: 'Junge', serif;
+  background-color: black;
+  border-radius: 0px 0px 50px 50px;
+  border-top: 4px solid silver;
+  -webkit-transform: translate(0px, 35px);
+          transform: translate(0px, 35px);
+  margin: 0;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+
 .imgRadius {
   border-radius: 10%;
   -webkit-animation-name: scaleFoto;
           animation-name: scaleFoto;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   border: 5px dotted black;
 }
 

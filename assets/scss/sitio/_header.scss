@@ -30,6 +30,9 @@ header {
             50% {opacity: 1; box-shadow: 5px 5px 20px 5px rgba(180, 9, 180, 0.63);}
             100% {opacity: 0; background-color: $colorPrimario; box-shadow: none;}
         }
+        .navbar-toggler {
+            width:120px;
+        }
     
         .navegacion {
             flex-basis: 0%;
