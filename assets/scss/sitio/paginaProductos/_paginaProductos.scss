@@ -28,7 +28,7 @@
     color: #dbdbdb;
     font-family: 'Junge', serif;
     background-color: black;
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 50px 50px;
     border-top: 4px solid silver;
     transform: translate(0px,35px);
     margin: 0;
@@ -37,8 +37,8 @@
     width: fit-content;
     overflow: hidden;
     
+    }
   }
-}
   @media (max-width: 576px) {
     .slidesSize h5 {
       font-size: 1em;
@@ -70,10 +70,10 @@
     50% {border-radius: 20%;}
     75% {border-radius: 40%;}
     100% {border-radius: 10%;}
+    }
   }
-}
 .carousel-caption {
   right: 0%;
   left: 0%;
   margin: 0px 5px;
-}
+  }

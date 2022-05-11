@@ -595,7 +595,7 @@ footer .footer__NavBarSocial a .mail:hover {
   color: #dbdbdb;
   font-family: 'Junge', serif;
   background-color: black;
-  border-radius: 0px 0px 40px 40px;
+  border-radius: 0px 0px 50px 50px;
   border-top: 4px solid silver;
   -webkit-transform: translate(0px, 35px);
           transform: translate(0px, 35px);
@@ -609,6 +609,12 @@ footer .footer__NavBarSocial a .mail:hover {
   width: fit-content;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .slidesSize p {
+    border-radius: 0px 0px 45px 45px;
+  }
+}
+
 
 @media (max-width: 576px) {
   .slidesSize h5 {
