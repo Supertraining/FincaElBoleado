@@ -1,54 +1,64 @@
-MEJORANDO EL SEO.
-Listado de META Keywords:
-Vino
-Córdoba
-Cordobés
-Cordobesa
-Bonarda
-Syrah
-Viognier
-Vermouth
-Bodega
-Artesanal
-Orgánico
-Alta
-Calidad
+FINCA EL BOLEADO.
 
-META Descripciones:
-INDEX:  
-"Vino orgánico cordobés elaborado de manera artesanal en la region de traslasierra, Cordoba."
-BODEGA:
-"Nuestra pequeña bodega produce solo 5000 litros de vino de alta calidad al año."
-VIÑEDO:
-"Nuestro suelo y clima cordobés cuenta con excelentes características para la plantación de vides"
-PRODUCTOS:
-"La alta calidad de nuestro vino y su origen lo hacen un producto exclusivo y novedoso a su paladar"
-CONTACTO:
-"El modesto tamaño de nuestra bodega nos permite brindarle una atención personalizada, pónganse en contacto!."
+## Descripción:
 
-OPTIMIZACIÓN DE IMÁGENES:
+    -Es un sitio donde se puede obtener información sobre la bodega y sus productos.
 
-- Se comprimieron todas las imágenes con optimizilla (compresor on-line).
-- Se optimizo el tamaño de la imágenes, incluidos los iconos de las redes sociales, con Pixlr X (editor de imágenes on-line.)
-- Se completan todos los textos Alternativos y se incluyen Keywords en ellos.
+## Objetivo: 
 
-CREACION DE SITEMAP:
+    - Dar a conocer nuestra bodega y nuestros productos y brindar confianza sobre nuestros métodos de elaboración.
 
-- Se crea un mapa de sitio en https://www.xml-sitemaps.com/
+## Construido con
+    - [Bootstrap] (https://getbootstrap.com/)
 
-MIXIN:
+    - [Sass] (https://sass-lang.com/)
 
-- Se creo y utilizo en el archivo scss/sitio/\_main.scss
+## Dependencias
+    "bootstrap": "^5.1.3" 
 
-EXTEND:
+## Versionado
 
-- Se puso en practica en el archivo scss/sitio/index/index.scss
+    - [GitHub](https://github.com/)
 
-MAP-GET:
+## SEO
 
-- Se creo en el archivo variables, se llamo con map-get en scss/sitio/index/index.scss
+    # META:
+        A) Listado de Keywords:{
+            Vino
+            Córdoba
+            Cordobés
+            Cordobesa
+            Bonarda
+            Syrah
+            Viognier
+            Vermouth
+            Bodega
+            Artesanal
+            Orgánico
+            Alta
+            Calidad
+        }
 
-11/05/2022
+        B) Descripciones en todas la páginas. {
+            INDEX
+            BODEGA
+            VIÑEDO
+            PRODUCTOS
+            CONTACTO
+        }
 
-- Se crea el archivo package.json
-- Se sube el sitio a https://fincaelboleado.000webhostapp.com/
+
+        C) OPTIMIZACIÓN DE IMÁGENES: {
+            - Se comprimieron todas las imágenes con optimizilla (compresor on-line).
+            - Se optimizo el tamaño de la imágenes, incluidos los iconos de las redes sociales, con Pixlr X (editor de imágenes on-line.)
+            - Se completan todos los textos Alternativos y se incluyen Keywords en ellos.
+        }    
+
+        D) CREACION DE SITEMAP: {
+
+            - Se crea un mapa de sitio en https://www.xml-sitemaps.com/
+        }
+
+## Autor
+
+Desarrollado por Maranga Matías 
