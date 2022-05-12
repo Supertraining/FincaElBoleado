@@ -2,7 +2,7 @@ MEJORANDO EL SEO.
 Listado de META Keywords:
 Vino
 Córdoba
-Cordobés 
+Cordobés
 Cordobesa
 Bonarda
 Syrah
@@ -11,10 +11,10 @@ Vermouth
 Bodega
 Artesanal
 Orgánico
-Alta 
+Alta
 Calidad
 
-META Descripciones: 
+META Descripciones:
 INDEX:  
 "Vino orgánico cordobés elaborado de manera artesanal en la region de traslasierra, Cordoba."
 BODEGA:
@@ -27,23 +27,28 @@ CONTACTO:
 "El modesto tamaño de nuestra bodega nos permite brindarle una atención personalizada, pónganse en contacto!."
 
 OPTIMIZACIÓN DE IMÁGENES:
+
 - Se comprimieron todas las imágenes con optimizilla (compresor on-line).
 - Se optimizo el tamaño de la imágenes, incluidos los iconos de las redes sociales, con Pixlr X (editor de imágenes on-line.)
-- Se completan todos los textos Alternativos y se incluyen Keywords en ellos. 
+- Se completan todos los textos Alternativos y se incluyen Keywords en ellos.
 
 CREACION DE SITEMAP:
+
 - Se crea un mapa de sitio en https://www.xml-sitemaps.com/
 
-MIXIN: 
-- Se creo y utilizo en el archivo scss/sitio/_main.scss
+MIXIN:
 
-EXTEND: 
+- Se creo y utilizo en el archivo scss/sitio/\_main.scss
+
+EXTEND:
+
 - Se puso en practica en el archivo scss/sitio/index/index.scss
 
 MAP-GET:
--  Se creo en el archivo variables, se llamo con map-get en scss/sitio/index/index.scss
+
+- Se creo en el archivo variables, se llamo con map-get en scss/sitio/index/index.scss
 
 11/05/2022
+
 - Se crea el archivo package.json
 - Se sube el sitio a https://fincaelboleado.000webhostapp.com/
-

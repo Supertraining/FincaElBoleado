@@ -30,14 +30,17 @@ header nav {
 
 header nav .burguerIcon {
   background-color: silver;
-  border: none;
+  border: 3px solid white;
   border-radius: 20%;
-  -webkit-animation-name: colorTilt;
-          animation-name: colorTilt;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-box-shadow: 3px 3px silver, 4px 4px white;
+          box-shadow: 3px 3px silver, 4px 4px white;
+}
+
+header nav .burguerIcon:active {
+  -webkit-box-shadow: 2px 2px silver;
+          box-shadow: 2px 2px silver;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
 }
 
 @-webkit-keyframes colorTilt {

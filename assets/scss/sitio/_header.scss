@@ -19,11 +19,17 @@ header {
         
         .burguerIcon {
             background-color: $colorPrimario;
-            border: none;
+            border: 3px solid white;
             border-radius: 20%;
-            animation-name: colorTilt;
-            animation-duration: 8s;
-            animation-iteration-count: infinite;
+            // animation-name: colorTilt;
+            // animation-duration: 8s;
+            // animation-iteration-count: infinite;
+            box-shadow: 3px 3px $colorPrimario, 4px 4px white;
+
+            &:active {
+                box-shadow: 2px 2px $colorPrimario;
+                transform: translate(2px,2px); 
+            }
         }
         @keyframes colorTilt {
             0% {opacity: 0; background-color: $colorPrimario; box-shadow: none;}
