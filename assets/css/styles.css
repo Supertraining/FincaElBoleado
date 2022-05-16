@@ -338,12 +338,12 @@ footer .footer__NavBarSocial a .mail:hover {
   text-align: center;
 }
 
-.parrafo {
+.parrafoWoodboard {
   font-size: 1em;
   font-weight: normal;
   font-family: "Inria Serif", serif;
   text-decoration: none;
-  color: #b5b7b9;
+  color: #c6cfd8;
   letter-spacing: 2px;
   text-align: justify;
 }
@@ -363,6 +363,16 @@ footer .footer__NavBarSocial a .mail:hover {
   .titulo {
     font-size: 3.5em;
   }
+}
+
+.parrafo {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Inria Serif", serif;
+  text-decoration: none;
+  color: #444444;
+  letter-spacing: 2px;
+  text-align: justify;
 }
 
 /******INDEX****/
@@ -643,7 +653,7 @@ footer .footer__NavBarSocial a .mail:hover {
           animation-name: scaleFoto;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  border: 5px dotted black;
+  border: 5px solid black;
 }
 
 @-webkit-keyframes scaleFoto {

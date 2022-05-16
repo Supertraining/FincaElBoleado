@@ -17,8 +17,8 @@
       
     }
             
-  .parrafo {
-  @include textoPropiedadesPrincipales(1em,normal ,$tituloYparrafosFont ,none ,#b5b7b9 ,2px, justify);
+  .parrafoWoodboard {
+  @include textoPropiedadesPrincipales(1em,normal ,$tituloYparrafosFont ,none ,#c6cfd8 ,2px, justify);
 }
 
 
@@ -30,4 +30,7 @@
     .titulo {
       font-size: 3.5em;
     }
+  }
+  .parrafo {
+    @include textoPropiedadesPrincipales(1em,bold ,$tituloYparrafosFont ,none ,#444444 ,2px, justify);
   }
