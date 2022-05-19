@@ -474,12 +474,13 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 /******BODEGA****/
-/***SECCION_ENCABEZADO/
-    .imgEncabezadoBodega {
-        background-image: url(../img/BodegaHeader.jpg);
-        background-position: center;
-        background-size: cover;
-    }  
+/***SECCION_ENCABEZADO****/
+.imgEncabezadoBodega {
+  background-image: url(../img/BodegaHeader.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 /***WOODBOARD************/
 .video {
   height: 500px;
