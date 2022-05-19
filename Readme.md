@@ -14,7 +14,8 @@ FINCA EL BOLEADO.
     - [Sass] (https://sass-lang.com/)
 
 ## Dependencias
-    "bootstrap": "^5.1.3" 
+    "bootstrap": "^"5.1.3" 
+    "fontawesome": "6.1.1"
 
 ## Versionado
 
@@ -39,7 +40,7 @@ FINCA EL BOLEADO.
             Calidad
         }
 
-        B) Descripciones en todas la páginas. {
+        B) Descripciones únicas en todas la páginas. {
             INDEX
             BODEGA
             VIÑEDO

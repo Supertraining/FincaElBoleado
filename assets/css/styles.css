@@ -43,46 +43,6 @@ header nav .burguerIcon:active {
           transform: translate(2px, 2px);
 }
 
-@-webkit-keyframes colorTilt {
-  0% {
-    opacity: 0;
-    background-color: silver;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  50% {
-    opacity: 1;
-    -webkit-box-shadow: 5px 5px 20px 5px rgba(180, 9, 180, 0.63);
-            box-shadow: 5px 5px 20px 5px rgba(180, 9, 180, 0.63);
-  }
-  100% {
-    opacity: 0;
-    background-color: silver;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
-@keyframes colorTilt {
-  0% {
-    opacity: 0;
-    background-color: silver;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  50% {
-    opacity: 1;
-    -webkit-box-shadow: 5px 5px 20px 5px rgba(180, 9, 180, 0.63);
-            box-shadow: 5px 5px 20px 5px rgba(180, 9, 180, 0.63);
-  }
-  100% {
-    opacity: 0;
-    background-color: silver;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
 header nav .navbar-toggler {
   width: 120px;
 }
@@ -177,6 +137,14 @@ header .imgEncabezado h1 {
 }
 
 @media (min-width: 400px) {
+  header .imgEncabezado h1 {
+    font-size: 6em;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+}
+
+@media (min-width: 768px) {
   header .imgEncabezado h1 {
     font-size: 8em;
     -webkit-transition: 3s;
@@ -376,7 +344,7 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 /******INDEX****/
-/*****HEADER****/
+/**SECCION_ENCABEZADO****/
 .imgEncabezadoIndex {
   background-image: url(../img/IndexHeader.jpg);
   background-position: center;
@@ -413,13 +381,22 @@ footer .footer__NavBarSocial a .mail:hover {
 
 .botonViñedo div {
   bottom: 8px;
-  right: 16px;
+  width: 100%;
 }
 
 .botonViñedo:hover .position-absolute {
   -webkit-box-shadow: inset 10px 10px 80px silver, -10px -10px 80px black;
           box-shadow: inset 10px 10px 80px silver, -10px -10px 80px black;
-  border-radius: 20%;
+}
+
+@media (min-width: 1320px) {
+  .botonViñedo:hover .position-absolute {
+    -webkit-transform: translate(270px, -110px);
+            transform: translate(270px, -110px);
+    -webkit-transition: 1s;
+    transition: 1s;
+    width: 40%;
+  }
 }
 
 /****SECCION BODEGA****/
@@ -433,8 +410,8 @@ footer .footer__NavBarSocial a .mail:hover {
   padding: 20px 20px;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .botonWoodBoardBodega:hover, .botonViñedo:hover, .botonWoodBoardProductos:hover {
@@ -497,13 +474,12 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 /******BODEGA****/
-/***HEADER************/
-.imgEncabezadoBodega {
-  background-image: url(../img/BodegaHeader.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
+/***SECCION_ENCABEZADO/
+    .imgEncabezadoBodega {
+        background-image: url(../img/BodegaHeader.jpg);
+        background-position: center;
+        background-size: cover;
+    }  
 /***WOODBOARD************/
 .video {
   height: 500px;
@@ -524,8 +500,7 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 /******VIÑEDO****/
-/****PAGINA_VINIEDO******/
-/*SECCION_HEADER**/
+/*SECCION_ENCABEZADO**/
 .imgEncabezadoViñedo {
   background-image: url(../img/ViñedoHeader.jpg);
   background-position: center;

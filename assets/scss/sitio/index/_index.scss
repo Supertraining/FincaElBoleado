@@ -1,91 +1,98 @@
-/*****HEADER****/
-.imgEncabezadoIndex {
-    background-image: url(../img/IndexHeader.jpg);
-    background-position: center;
-    background-size: cover;
-}
+/**SECCION_ENCABEZADO****/
+    .imgEncabezadoIndex {
+        background-image: url(../img/IndexHeader.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
 /****SECCION VIÑEDO****/
-.sectionViñedoSubTitulo {
-    font-size: map-get($IndexSeccionviniedoSubtitulo ,tamañoLetra );
-    letter-spacing: map-get($IndexSeccionviniedoSubtitulo ,espaciadoLetra );
-    font-family: map-get($IndexSeccionviniedoSubtitulo ,familiaDeLetra );
-    color: map-get($IndexSeccionviniedoSubtitulo, colour );
-    text-decoration:map-get($IndexSeccionviniedoSubtitulo ,subrayado );
+    .sectionViñedoSubTitulo {       
+        font-size: map-get($IndexSeccionviniedoSubtitulo ,tamañoLetra );
+        letter-spacing: map-get($IndexSeccionviniedoSubtitulo ,espaciadoLetra );
+        font-family: map-get($IndexSeccionviniedoSubtitulo ,familiaDeLetra );
+        color: map-get($IndexSeccionviniedoSubtitulo, colour );
+        text-decoration:map-get($IndexSeccionviniedoSubtitulo ,subrayado );
 
-@media (min-width:768px) {
-    .sectionViñedoParrafo {
-    font-size: 1em;
-    }
-}
-}
-.img {
-    box-shadow: -10px 10px 10px #3b589886;
-
-    .img1:hover {
-        transform: scale(1.1);
-        transition: 5s;
-}
-}
-.botonViñedo {
-    @extend .botonWoodBoardBodega;
-
-    div {
-        bottom: 8px;
-        right: 16px;
-    }
-    &:hover .position-absolute {
-            box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0);
-            border-radius: 20%;
+        @media (min-width:768px) {
+                .sectionViñedoParrafo {
+                font-size: 1em;
+            }
         }
     }
 
+    .img {
+        box-shadow: -10px 10px 10px #3b589886;
+
+        .img1:hover {
+            transform: scale(1.1);
+            transition: 5s;
+        }
+    }
+
+    .botonViñedo {
+        @extend .botonWoodBoardBodega;
+
+        div {
+            bottom: 8px;
+            width: 100%;
+        }
+        &:hover .position-absolute {
+            box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0);
+            
+        }
+        @media (min-width:1320px) {
+            &:hover .position-absolute{
+                transform: translate(270px,-110px);
+                transition: 1s;
+                width: 40%;
+            }    
+        }
+    }
 
 /****SECCION BODEGA****/
-.botonWoodBoardBodega {
-    color: $colorPrimario;
-    font-size: 2em;
-    font-style: italic;
-    letter-spacing: 3px;
-    font-family: "Hurricane";
-    font-weight: 100;
-    padding: 20px 20px;
-    animation-name: fadeIn;
-    animation-duration: 5s;
-
-    &:hover {
-        cursor: pointer;
-        animation: none;
-        text-shadow: 0px 0px 8px white, 39px -10px 20px $colorPrimario;
-        transform: scale(1.02);
-        transition: 1s;
-        -webkit-text-stroke: 1.5px black;
-        color: transparent;
-    }
-    &:hover .fa-solid {
-        display: inline-block;
-    }
-    @keyframes fadeIn {
-        0% {opacity: 0;}
-        50% {opacity: 0.5;}
-        100% {opacity: 1;}
-    }
-
-.fa-solid {
-    font-size: 0.4em;
-    margin-left: 10px;
-    display: none;
-}
-    
-}
-@media (min-width:576px) {      
     .botonWoodBoardBodega {
-    font-size: 4em;
-    }
+        color: $colorPrimario;
+        font-size: 2em;
+        font-style: italic;
+        letter-spacing: 3px;
+        font-family: "Hurricane";
+        font-weight: 100;
+        padding: 20px 20px;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+
+        &:hover {
+            cursor: pointer;
+            animation: none;
+            text-shadow: 0px 0px 8px white, 39px -10px 20px $colorPrimario;
+            transform: scale(1.02);
+            transition: 1s;
+            -webkit-text-stroke: 1.5px black;
+            color: transparent;
+        }
+        &:hover .fa-solid {
+            display: inline-block;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            50% {opacity: 0.5;}
+            100% {opacity: 1;}
         }
 
+        .fa-solid {
+            font-size: 0.4em;
+            margin-left: 10px;
+            display: none;
+        }
+    
+        @media (min-width:576px) {      
+            font-size: 4em;
+        }
+    }        
+
 /****SECCION PRODUCTOS****/
-.botonWoodBoardProductos {
-    @extend .botonWoodBoardBodega;
-    border: 1px solid silver;
-    margin: 10px;
-}
+    .botonWoodBoardProductos {
+        @extend .botonWoodBoardBodega;
+        border: 1px solid silver;
+        margin: 10px;
+    }
