@@ -163,7 +163,7 @@ header .imgEncabezado {
 }
 
 header .imgEncabezado h1 {
-  font-size: 2em;
+  font-size: 3em;
   -webkit-animation-name: logoFadeIn;
           animation-name: logoFadeIn;
   -webkit-animation-duration: 5s;
@@ -416,6 +416,12 @@ footer .footer__NavBarSocial a .mail:hover {
   right: 16px;
 }
 
+.botonViñedo:hover .position-absolute {
+  -webkit-box-shadow: inset 10px 10px 80px silver, -10px -10px 80px black;
+          box-shadow: inset 10px 10px 80px silver, -10px -10px 80px black;
+  border-radius: 20%;
+}
+
 /****SECCION BODEGA****/
 .botonWoodBoardBodega, .botonViñedo, .botonWoodBoardProductos {
   color: silver;
@@ -427,8 +433,8 @@ footer .footer__NavBarSocial a .mail:hover {
   padding: 20px 20px;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .botonWoodBoardBodega:hover, .botonViñedo:hover, .botonWoodBoardProductos:hover {
@@ -514,7 +520,7 @@ footer .footer__NavBarSocial a .mail:hover {
   width: 350px;
   -webkit-transition: 5s;
   transition: 5s;
-  border: 5px solid white;
+  border: 10px solid black;
 }
 
 /******VIÑEDO****/
@@ -617,7 +623,7 @@ footer .footer__NavBarSocial a .mail:hover {
   border-top: 4px solid silver;
   -webkit-transform: translate(0px, 35px);
           transform: translate(0px, 35px);
-  margin: 0;
+  margin: -5px;
   padding: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -653,7 +659,6 @@ footer .footer__NavBarSocial a .mail:hover {
           animation-name: scaleFoto;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  border: 5px solid black;
 }
 
 @-webkit-keyframes scaleFoto {

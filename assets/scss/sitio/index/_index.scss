@@ -33,7 +33,13 @@
         bottom: 8px;
         right: 16px;
     }
-}
+    &:hover .position-absolute {
+            box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0);
+            border-radius: 20%;
+        }
+    }
+
+
 /****SECCION BODEGA****/
 .botonWoodBoardBodega {
     color: $colorPrimario;
@@ -44,7 +50,7 @@
     font-weight: 100;
     padding: 20px 20px;
     animation-name: fadeIn;
-    animation-duration: 10s;
+    animation-duration: 5s;
 
     &:hover {
         cursor: pointer;
