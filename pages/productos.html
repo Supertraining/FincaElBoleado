@@ -14,6 +14,11 @@
   <title>Productos Finca El Boleado</title>
   <link rel="icon"
     href="../assets/img/favicon.ico" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -131,96 +136,232 @@
 
     </section>
 
-    <!-- SECCION_CARRUSEL_IMG -->
-    <section class="row justify-content-center"
-      id="productos">
+    <!-- SECCIÓN_TIENDA_PRODUCTOS -->
+    <section class="row">
+      <div class="col-xl-3">
+        <div class="card"
+          style="width: 18rem;">
+          <div class="card-header text-primary bg-dark text-center">
+            Finca El Boleado
+          </div>
+          <img class="card-img-top"
+            src="../assets/img/cardSyrah.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Syrah</h5>
+            <p class="card-text">Amable y refrescante.</p>
+          </div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-dark text-primary"
+                id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-center w-100 text-decoration-none buttonCards"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne" id="buttonToggle">
+                    Características
+                  </button>
+                </h5>
+              </div>
 
-      <div id="carouselExampleControls"
-        class="carousel slide col-xl-6 col-lg-8 col-md-8 col-sm-9 col-12"
-        data-ride="carousel"
-        data-interval="9000">
-
-        <div class="carousel-inner imgRadius">
-
-          <div class="carousel-item active slidesSize">
-            <img class="d-block imgRadius w-100"
-              height="100%"
-              src="../assets/img/ProductosViognier1.jpg"
-              alt="variedad Viognier" />
-            <div class="carousel-caption d-sm-block">
-              <h5>VIOGNIER</h5>
-              <p>
-                Color amarillo brillante con reflejos dorados. Sabor frutado y
-                levemente ácido que aporta gran frescura. Aroma dulce con
-                notas de miel.
-              </p>
+              <div id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../assets/img/eye.png"
+                        alt=""> Rojo purpureo de tono intenso</li>
+                    <li class="list-group-item"><img src="../assets/img/nose.png"
+                        alt=""> Chocolate, coco y carbon</li>
+                    <li class="list-group-item"><img src="../assets/img/tongue.png"
+                        alt=""> Frutal, suave y sedoso</li>
+                    <li class="list-group-item">Intensidad en boca: <i class="fa-solid fa-wine-glass"></i><i
+                        class="fa-solid fa-wine-glass"></i></li>
+                    <li class="list-group-item">Persistencia: <i class="fa-solid fa-wine-glass"></i></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="carousel-item slidesSize">
-            <img class="d-block imgRadius w-100"
-              height="100%"
-              src="../assets/img/ProductosBonarda.jpg"
-              alt="variedad Bonarda" />
-            <div class="carousel-caption d-sm-block">
-              <h5>BONARDA</h5>
-              <p>
-                Color rojo rubí. Sabor potente de largo final en boca con
-                notas de cafe y madera. Aroma con remembranza a maleza y
-                hiervas.
-              </p>
-            </div>
+          <div class="card-body bg-dark text-center">
+            <a href="#"
+              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
-
-          <div class="carousel-item slidesSize">
-            <img class="d-block imgRadius w-100"
-              height="100%"
-              src="../assets/img/ProductosSyrah1.jpg"
-              alt="variedad Syrah" />
-            <div class="carousel-caption d-sm-block">
-              <h5>SYRAH</h5>
-              <p>
-                Rojo purpureo de tono intenso. Sabor especiado suave y sedoso.
-                Aroma a chocolate, coco y carbon.
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item slidesSize">
-            <img class="d-block imgRadius w-100"
-              height="100%"
-              src="../assets/img/ProductosVermouth.jpg"
-              alt="variedad Vermouth" />
-            <div class="carousel-caption d-sm-block">
-              <h5>VERMOUTH</h5>
-              <p>
-                Color rojo rubí. Sabor muy refrescante, especiado y levemente
-                anizado. Aroma a pimienta y hierbas frescas.
-              </p>
-            </div>
-          </div>
-
         </div>
-
-        <a class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev">
-          <span class="carousel-control-prev-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next">
-          <span class="carousel-control-next-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-
       </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="card"
+          style="width: 18rem;">
+          <div class="card-header text-primary bg-dark text-center">
+            Finca El Boleado
+          </div>
+          <img class="card-img-top"
+            src="../assets/img/cardVermouth.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Vermouth</h5>
+            <p class="card-text">Momentos especiales.</p>
+          </div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-dark text-primary"
+                id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    Características
+                  </button>
+                </h5>
+              </div>
 
+              <div id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../assets/img/eye.png"
+                        alt=""> Rojo rubí.</li>
+                    <li class="list-group-item"><img src="../assets/img/nose.png"
+                        alt=""> Pimienta, hierbas frescas y sierra cordobesa.</li>
+                    <li class="list-group-item"><img src="../assets/img/tongue.png"
+                        alt=""> Refrescante y especiado.</li>
+                    <li class="list-group-item">Intensidad en boca: <i class="fa-solid fa-wine-glass"></i><i
+                        class="fa-solid fa-wine-glass"></i></li>
+                    <li class="list-group-item">Persistencia: <i class="fa-solid fa-wine-glass"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body bg-dark text-center">
+            <a href="#"
+              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="card"
+          style="width: 18rem;">
+          <div class="card-header text-primary bg-dark text-center">
+            Finca El Boleado
+          </div>
+          <img class="card-img-top"
+            src="../assets/img/cardBonarda.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bonarda</h5>
+            <p class="card-text">Único e irrepetible.</p>
+          </div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-dark text-primary"
+                id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree">
+                    Características
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../assets/img/eye.png"
+                        alt=""> Rojo intenso.</li>
+                    <li class="list-group-item"><img src="../assets/img/nose.png"
+                        alt=""> Remembranza a maleza y
+                      hiervas.</li>
+                    <li class="list-group-item"><img src="../assets/img/tongue.png"
+                        alt=""> Largo final en boca con
+                      notas de cafe y madera.</li>
+                    <li class="list-group-item">Intensidad en boca: <i class="fa-solid fa-wine-glass"></i><i
+                        class="fa-solid fa-wine-glass"></i></li>
+                    <li class="list-group-item">Persistencia: <i class="fa-solid fa-wine-glass"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body bg-dark text-center">
+            <a href="#"
+              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="card"
+          style="width: 18rem;">
+          <div class="card-header text-primary bg-dark text-center">
+            Finca El Boleado
+          </div>
+          <img class="card-img-top"
+            src="../assets/img/cardViognier.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Viognier</h5>
+            <p class="card-text">Renacer.</p>
+          </div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-dark text-primary"
+                id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapseFour">
+                    Características
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../assets/img/eye.png"
+                        alt=""> Amarillo brillante con reflejos dorados.</li>
+                    <li class="list-group-item"><img src="../assets/img/nose.png"
+                        alt=""> dulce con
+                      notas de miel.</li>
+                    <li class="list-group-item"><img src="../assets/img/tongue.png"
+                        alt=""> muy fresco, frutado y
+                      levemente ácido.</li>
+                    <li class="list-group-item">Intensidad en boca: <i class="fa-solid fa-wine-glass"></i><i
+                        class="fa-solid fa-wine-glass"></i></li>
+                    <li class="list-group-item">Persistencia: <i class="fa-solid fa-wine-glass"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body bg-dark text-center">
+            <a href="#"
+              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
 
   </main>
@@ -286,6 +427,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script src="../assets/Productos.js"></script>
 </body>
 
 </html>

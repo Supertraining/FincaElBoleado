@@ -673,6 +673,35 @@ footer .footer__NavBarSocial a .mail:hover {
   margin: 0px 5px;
 }
 
+.buttonCards:hover {
+  color: white;
+}
+
+.show {
+  -webkit-animation-name: displaySlow;
+          animation-name: displaySlow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes displaySlow {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+@keyframes displaySlow {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
 /******CONTACTO****/
 /*SECCION_ENCABEZADO**/
 .imgEncabezadoContacto {

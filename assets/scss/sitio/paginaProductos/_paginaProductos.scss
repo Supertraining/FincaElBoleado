@@ -72,3 +72,15 @@
     left: 0%;
     margin: 0px 5px;
   }
+
+.buttonCards:hover {
+  color: white;
+}
+.show {
+  animation-name: displaySlow;
+  animation-duration: 3s;
+}
+@keyframes displaySlow {
+  from {display: none;}
+  to {display: block;}
+}
