@@ -522,157 +522,6 @@ footer .footer__NavBarSocial a .mail:hover {
   background-size: cover;
 }
 
-/*SECCION_CARRUSEL_IMG**/
-.slidesSize {
-  height: 500px;
-  -webkit-animation-name: imgFade;
-          animation-name: imgFade;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes imgFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    opacity: 0.8;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes imgFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    opacity: 0.8;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-.slidesSize h5 {
-  color: #353535;
-  font-family: 'Junge', serif;
-  font-size: 3em;
-  font-weight: bold;
-  -webkit-text-stroke: 0.01px white;
-}
-
-@media (max-width: 576px) {
-  .slidesSize h5 {
-    font-size: 1.5em;
-  }
-}
-
-.slidesSize p {
-  color: #dbdbdb;
-  font-family: 'Junge', serif;
-  background-color: black;
-  border-radius: 0px 0px 50px 50px;
-  border-top: 4px solid silver;
-  -webkit-transform: translate(0px, 35px);
-          transform: translate(0px, 35px);
-  margin: -5px;
-  padding: 10px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .slidesSize p {
-    font-size: 0.8em;
-    border-radius: 0px 0px 40px 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .slidesSize p {
-    border-radius: 0px 0px 35px 35px;
-  }
-}
-
-@media (max-width: 320px) {
-  .slidesSize p {
-    border-radius: 0px 0px 25px 25px;
-  }
-}
-
-.imgRadius {
-  border-radius: 10%;
-  -webkit-animation-name: scaleFoto;
-          animation-name: scaleFoto;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@-webkit-keyframes scaleFoto {
-  0% {
-    border-radius: 50%;
-  }
-  50% {
-    border-radius: 20%;
-  }
-  75% {
-    border-radius: 40%;
-  }
-  100% {
-    border-radius: 10%;
-  }
-}
-
-@keyframes scaleFoto {
-  0% {
-    border-radius: 50%;
-  }
-  50% {
-    border-radius: 20%;
-  }
-  75% {
-    border-radius: 40%;
-  }
-  100% {
-    border-radius: 10%;
-  }
-}
-
-.carousel-caption {
-  right: 0%;
-  left: 0%;
-  margin: 0px 5px;
-}
-
 .buttonCards:hover {
   color: white;
 }
@@ -700,6 +549,41 @@ footer .footer__NavBarSocial a .mail:hover {
   to {
     display: block;
   }
+}
+
+.cardsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .cardsDiv {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.cardFont {
+  font-family: "Junge", serif;
+}
+
+.card-text {
+  font-family: "Hurricane";
+  font-style: italic;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #bc2a8d;
+}
+
+.cardValue {
+  font-family: "Hurricane";
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 /******CONTACTO****/

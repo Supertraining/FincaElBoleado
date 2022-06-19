@@ -89,12 +89,12 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false">
-                Productos
+                Tienda
               </a>
               <div class="dropdown-menu bg-transparent p-0 menuFly"
                 aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item backgroundDropDown"
-                  href="../pages/productos.html">Nuestros productos</a>
+                  href="../pages/productos.html">Nuestros vinos</a>
                 <a class="dropdown-item backgroundDropDown dnone"
                   href="../pages/productos.html#productos">Bonarda</a>
                 <a class="dropdown-item backgroundDropDown dnone"
@@ -126,10 +126,10 @@
   <main>
 
     <!-- SECCION_TEXTO_PRINCIPAL -->
-    <section class="row text-center mt-5">
+    <section class="row justify-content-center text-center mt-5">
 
-      <p class="parrafo">
-        Nuestros productos son elaborados con nuestras propias manos, son orgánicos, artesanales y
+      <p class="parrafo row col-xl-6 col-lg-8 col-md-8 col-sm-8 col-8 shadow">
+        Nuestros vinos son elaborados con nuestras propias manos, son orgánicos, artesanales y
         carecen de sulfitos agregados, lo que conserva el sabor original y noble de nuestros cortes y le da a nuestros
         vinos un toque de distinción frente a aquellos elaborados de manera industrial.
       </p>
@@ -137,11 +137,11 @@
     </section>
 
     <!-- SECCIÓN_TIENDA_PRODUCTOS -->
-    <section class="row">
-      <div class="col-xl-3">
+    <section class="row cardsDiv">
+      <div class="d-flex justify-content-center my-3 col-xl-3 col-lg-5 col-md-5 col-sm-6">
         <div class="card"
           style="width: 18rem;">
-          <div class="card-header text-primary bg-dark text-center">
+          <div class="card-header text-primary bg-dark text-center cardFont">
             Finca El Boleado
           </div>
           <img class="card-img-top"
@@ -156,7 +156,7 @@
               <div class="card-header bg-dark text-primary"
                 id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link text-center w-100 text-decoration-none buttonCards"
+                  <button class="btn btn-link text-center w-100 text-decoration-none buttonCards cardFont"
                     data-toggle="collapse"
                     data-target="#collapseOne"
                     aria-expanded="true"
@@ -165,7 +165,6 @@
                   </button>
                 </h5>
               </div>
-
               <div id="collapseOne"
                 class="collapse"
                 aria-labelledby="headingOne"
@@ -186,17 +185,17 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center">
-            <a href="#"
-              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
+            <p class="m-0 text-white">$</p><p id="precioIva" class="text-white m-0">900</p><p class="m-0 text-white">+ IVA</p>
+            <a id="carrito" href="#"
+              class="card-link text-decoration-none cardFont">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col-xl-3">
+      <div class="d-flex justify-content-center my-3 col-xl-3 col-lg-5 col-md-5 col-sm-6">
         <div class="card"
           style="width: 18rem;">
-          <div class="card-header text-primary bg-dark text-center">
+          <div class="card-header text-primary bg-dark text-center cardFont">
             Finca El Boleado
           </div>
           <img class="card-img-top"
@@ -211,7 +210,7 @@
               <div class="card-header bg-dark text-primary"
                 id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                  <button class="btn btn-link text-center w-100 text-decoration-none cardFont"
                     data-toggle="collapse"
                     data-target="#collapseTwo"
                     aria-expanded="true"
@@ -220,7 +219,6 @@
                   </button>
                 </h5>
               </div>
-
               <div id="collapseTwo"
                 class="collapse"
                 aria-labelledby="headingTwo"
@@ -241,17 +239,18 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center">
+          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
+            <p class="text-white cardValue m-0">$900</p>
             <a href="#"
-              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+              class="card-link text-decoration-none cardFont">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
       </div>
-      <div class="col-xl-3">
+      <div class="d-flex justify-content-center my-3 col-xl-3 col-lg-5 col-md-5 col-sm-6">
         <div class="card"
           style="width: 18rem;">
-          <div class="card-header text-primary bg-dark text-center">
+          <div class="card-header text-primary bg-dark text-center cardFont">
             Finca El Boleado
           </div>
           <img class="card-img-top"
@@ -266,7 +265,7 @@
               <div class="card-header bg-dark text-primary"
                 id="headingThree">
                 <h5 class="mb-0">
-                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                  <button class="btn btn-link text-center w-100 text-decoration-none cardFont"
                     data-toggle="collapse"
                     data-target="#collapseThree"
                     aria-expanded="true"
@@ -275,7 +274,6 @@
                   </button>
                 </h5>
               </div>
-
               <div id="collapseThree"
                 class="collapse"
                 aria-labelledby="headingThree"
@@ -298,17 +296,18 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center">
+          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
+            <p class="text-white cardValue m-0">$1200</p>
             <a href="#"
-              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+              class="card-link text-decoration-none cardFont">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
       </div>
-      <div class="col-xl-3">
+      <div class="d-flex justify-content-center my-3 col-xl-3 col-lg-5 col-md-5 col-sm-6">
         <div class="card"
           style="width: 18rem;">
-          <div class="card-header text-primary bg-dark text-center">
+          <div class="card-header text-primary bg-dark text-center cardFont">
             Finca El Boleado
           </div>
           <img class="card-img-top"
@@ -323,7 +322,7 @@
               <div class="card-header bg-dark text-primary"
                 id="headingFour">
                 <h5 class="mb-0">
-                  <button class="btn btn-link text-center w-100 text-decoration-none"
+                  <button class="btn btn-link text-center w-100 text-decoration-none cardFont"
                     data-toggle="collapse"
                     data-target="#collapseFour"
                     aria-expanded="true"
@@ -332,7 +331,6 @@
                   </button>
                 </h5>
               </div>
-
               <div id="collapseFour"
                 class="collapse"
                 aria-labelledby="headingFour"
@@ -355,9 +353,10 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center">
+          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
+            <p class="text-white cardValue m-0">$900</p>
             <a href="#"
-              class="card-link text-decoration-none">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
+              class="card-link text-decoration-none cardFont">Agregar al carrito <i class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
@@ -411,7 +410,7 @@
       <a aria-current="page"
         href="../pages/viniedo.html">Viñedo</a>
       <a aria-current="page"
-        href="../pages/productos.html">Productos</a>
+        href="../pages/productos.html">Tienda</a>
       <a aria-current="page"
         href="../pages/contacto.html">Contacto</a>
     </nav>

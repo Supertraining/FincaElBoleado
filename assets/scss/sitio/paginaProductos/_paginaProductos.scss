@@ -4,76 +4,8 @@
     background-position: center;
     background-size: cover;
   } 
-/*SECCION_CARRUSEL_IMG**/
-  .slidesSize {
-    height: 500px;
-    animation-name: imgFade;
-    animation-duration: 4s;
 
-    @keyframes imgFade {
-      0% {opacity: 0; transform:scale(0.1);}
-      50% {opacity: 0.5; transform:scale(1.2);}
-      75%  {opacity: 0.8; transform:scale(0.9);}
-      100% {opacity: 1; transform:scale(1);}
-    }
-
-    h5 {
-      color: #353535;
-      font-family: 'Junge', serif;
-      font-size: 3em;
-      font-weight: bold;
-      -webkit-text-stroke: 0.01px white;
-
-      @media (max-width: 576px) {
-          font-size: 1.5em;
-        }
-    }
-
-    p {
-      color: #dbdbdb;
-      font-family: 'Junge', serif;
-      background-color: black;
-      border-radius: 0px 0px 50px 50px;
-      border-top: 4px solid silver;
-      transform: translate(0px,35px);
-      margin: -5px;
-      padding: 10px;
-      height:fit-content;
-      width: fit-content;
-      overflow: hidden;
-
-      @media (max-width: 768px) {
-        font-size: 0.8em;
-        border-radius: 0px 0px 40px 40px;
-      }
-      @media (max-width: 480px) {
-        border-radius: 0px 0px 35px 35px;
-      }
-      @media (max-width: 320px) {
-        border-radius: 0px 0px 25px 25px;
-      }
-    }
-  }
-
-  .imgRadius {
-    border-radius: 10%;
-    animation-name: scaleFoto;
-    animation-duration: 5s;
-  
-    @keyframes scaleFoto {
-      0% {border-radius: 50%;}
-      50% {border-radius: 20%;}
-      75% {border-radius: 40%;}
-      100% {border-radius: 10%;}
-    }
-  }
-  .carousel-caption {
-    right: 0%;
-    left: 0%;
-    margin: 0px 5px;
-  }
-
-.buttonCards:hover {
+  .buttonCards:hover {
   color: white;
 }
 .show {
@@ -83,4 +15,27 @@
 @keyframes displaySlow {
   from {display: none;}
   to {display: block;}
+}
+.cardsDiv {
+
+  display: flex;
+  justify-content: center;
+  @media (max-width: 750px) {
+    justify-content: space-between;
+  }
+}
+.cardFont {
+  font-family: $logoFontFam;
+}
+.card-text {
+  font-family: "Hurricane";
+  font-style: italic;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #bc2a8d;
+}
+.cardValue {
+  font-family: "Hurricane";
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
