@@ -167,10 +167,10 @@
 		<!-- SECCION_VIÑEDO -->
 		<section class="row justify-content-center mt-5">
 
-			<div class="col-md-10">
+			<div class="col-md-10" id="prueba">
 				<h3 class="text-center sectionViñedoSubTitulo">Nuestro</h3>
 				<h2 class="text-center titulo">Viñedo</h2>
-				<p class="parrafo">
+				<p class="parrafo" id="p1">
 					Nuestro viñedo se encuentra establecido en la region de
 					traslasierra, Córdoba, a 800 mtsnm, en el Valle de San Javier, al
 					pie del cerro Champaqui y la sierra de Comechingones. Es una región
@@ -184,8 +184,8 @@
 			<div class="col-xl-4 col-lg-4 col-md-5 col-7 d-flex justify-content-center img p-0 position-relative">
 				<a href="./pages/viniedo.html"
 					class="p-0 botonViñedo">
-					<div class="position-absolute d-flex align-items-center justify-content-center">
-						Viñedo<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					<div class="position-absolute d-flex align-items-center justify-content-center" id="boton_viñedo">
+						Viñedo<i class="fa-solid fa-arrow-right-from-bracket" id="flechaViñedo"></i>
 					</div>
 					<img class="img-fluid"
 						src="./assets/img/IndexSectionViñedo.jpg"
@@ -240,7 +240,7 @@
 	</main>
 
 	<!--PIE_DE_PAGINA-->
-	<footer class="row d-flex flex-wrap align-items-center justify-content-evenly mt-5">
+	<footer class="row d-flex flex-wrap align-items-center justify-content-evenly mt-5" id="piePag">
 
 		<div class="col-md-3 col-sm-5 col-9 d-flex flex-column align-items-center mt-sm-5 mt-5">
 			<a class="text-decoration-none"
@@ -280,13 +280,13 @@
 
 		<nav class="footer__NavBar d-flex flex-column align-items-center col-md-3 col-sm-3 col-3">
 			<a aria-current="page"
-				href="./pages/bodega.html">Bodega</a>
+				href="./pages/bodega.html" id="navbod">Bodega</a>
 			<a aria-current="page"
-				href="./pages/viniedo.html">Viñedo</a>
+				href="./pages/viniedo.html" id="navvin">Viñedo</a>
 			<a aria-current="page"
-				href="./pages/productos.html">Productos</a>
+				href="./pages/productos.html" id="navprod">Productos</a>
 			<a aria-current="page"
-				href="./pages/contacto.html">Contacto</a>
+				href="./pages/contacto.html" id="navcont">Contacto</a>
 		</nav>
 
 	</footer>
@@ -300,6 +300,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
+	<script src="./assets/javascript/index.js"></script>
+	<script src="./assets/javascript/main.js"></script>
 </body>
 
 </html>

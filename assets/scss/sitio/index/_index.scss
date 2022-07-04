@@ -36,19 +36,19 @@
             bottom: 8px;
             width: 100%;
         }
-        &:hover .position-absolute {
-            box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0);
-            
         }
-        @media (min-width:1320px) {
-            &:hover .position-absolute{
-                transform: translate(270px,-110px);
-                transition: 1s;
-                width: 40%;
+    
+    @media (min-width:1320px) {
+        .botonViñedoAnimacion {
+            animation-name: botonEnlace;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            @keyframes botonEnlace {
+                from {transform: none; transition: none; box-shadow: none; color: $colorPrimario; -webkit-text-stroke: 0;}
+                to {transform: translate(270px,-110px); transition: 1s; width: 40%; box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0); color: transparent; -webkit-text-stroke: 1.5px black;}
             }    
-        }
-    }
-
+            }
+        } 
 /****SECCION BODEGA****/
     .botonWoodBoardBodega {
         color: $colorPrimario;
