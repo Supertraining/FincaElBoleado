@@ -42,13 +42,9 @@ header nav .navegacion {
   flex-basis: 0%;
 }
 header nav .headerNavbar_Nav {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  -webkit-animation-name: logoFadeIn;
-          animation-name: logoFadeIn;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: logoFadeIn;
+  animation-duration: 5s;
 }
 header nav .backgroundDropDown {
   font-size: 1.5em;
@@ -61,19 +57,9 @@ header nav .backgroundDropDown {
   }
 }
 header nav .menuFly {
-  -webkit-animation-name: menuFly;
-          animation-name: menuFly;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-name: menuFly;
+  animation-duration: 3s;
   box-shadow: -4px 4px 0px #bc2a8d;
-}
-@-webkit-keyframes menuFly {
-  from {
-    top: 5cm;
-  }
-  to {
-    top: 1.7cm;
-  }
 }
 @keyframes menuFly {
   from {
@@ -89,8 +75,6 @@ header nav .dropdown-toggle::after {
 @media (max-width: 570px) {
   header nav .dropdown-menu {
     min-width: 0;
-    width: -webkit-min-content;
-    width: -moz-min-content;
     width: min-content;
   }
 }
@@ -103,10 +87,8 @@ header .imgEncabezado {
 }
 header .imgEncabezado h1 {
   font-size: 3em;
-  -webkit-animation-name: logoFadeIn;
-          animation-name: logoFadeIn;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: logoFadeIn;
+  animation-duration: 5s;
 }
 @media (min-width: 260px) {
   header .imgEncabezado h1 {
@@ -140,49 +122,34 @@ footer .footer__NavBarSocial a img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  -webkit-animation-name: lightf;
-          animation-name: lightf;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: lightf;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   border-radius: 50%;
 }
 footer .footer__NavBarSocial a .face {
   background-color: #3b5998;
 }
 footer .footer__NavBarSocial a .face:hover {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 footer .footer__NavBarSocial a .insta {
   background-color: #bc2a8d;
 }
 footer .footer__NavBarSocial a .insta:hover {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 footer .footer__NavBarSocial a .wapp {
   background-color: #25d366;
 }
 footer .footer__NavBarSocial a .wapp:hover {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 footer .footer__NavBarSocial a .mail {
   background-color: #b2936d;
 }
 footer .footer__NavBarSocial a .mail:hover {
-  -webkit-animation: none;
-          animation: none;
-}
-@-webkit-keyframes lightf {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: none;
 }
 @keyframes lightf {
   from {
@@ -203,26 +170,9 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 .navFooterAnimation {
-  -webkit-animation-name: shadowout;
-          animation-name: shadowout;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes shadowout {
-  from {
-    text-shadow: none;
-    transform: scale(1);
-    -webkit-text-stroke: 0;
-    color: white;
-  }
-  to {
-    text-shadow: 0px 0px 8px white, 39px -10px 20px silver, 15px -10px 1px rgba(188, 42, 142, 0.4235294118);
-    transform: scale(1.5);
-    -webkit-text-stroke: 0.5px black;
-    color: transparent;
-  }
+  animation-name: shadowout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 @keyframes shadowout {
   from {
@@ -244,10 +194,8 @@ footer .footer__NavBarSocial a .mail:hover {
   text-align: center;
   font-size: 16px;
   font-family: "Junge", serif;
-  -webkit-animation-name: logoFadeIn;
-          animation-name: logoFadeIn;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: logoFadeIn;
+  animation-duration: 5s;
 }
 .logo img {
   box-shadow: 7px 7px #999;
@@ -255,14 +203,6 @@ footer .footer__NavBarSocial a .mail:hover {
 .logo img:active {
   box-shadow: 4px 4px #666;
   transform: translate(3px, 3px);
-}
-@-webkit-keyframes logoFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 @keyframes logoFadeIn {
   from {
@@ -281,8 +221,7 @@ footer .footer__NavBarSocial a .mail:hover {
   font-size: 2em;
   font-weight: 100;
   font-family: "Inria Serif", serif;
-  -webkit-text-decoration: underline solid silver 2px;
-          text-decoration: underline solid silver 2px;
+  text-decoration: underline solid silver 2px;
   color: silver;
   letter-spacing: 2px;
   text-align: center;
@@ -302,8 +241,7 @@ footer .footer__NavBarSocial a .mail:hover {
   font-size: 1.5em;
   font-weight: 100;
   font-family: "Inria Serif", serif;
-  -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: 0;
   color: black;
   letter-spacing: 3px;
   text-align: center;
@@ -338,8 +276,7 @@ footer .footer__NavBarSocial a .mail:hover {
   letter-spacing: 3px;
   font-family: "Inria Serif", serif;
   color: silver;
-  -webkit-text-decoration: underline solid silver 1px;
-          text-decoration: underline solid silver 1px;
+  text-decoration: underline solid silver 1px;
 }
 @media (min-width: 768px) {
   .sectionViñedoSubTitulo .sectionViñedoParrafo {
@@ -362,29 +299,9 @@ footer .footer__NavBarSocial a .mail:hover {
 
 @media (min-width: 1320px) {
   .botonViñedoAnimacion {
-    -webkit-animation-name: botonEnlace;
-            animation-name: botonEnlace;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes botonEnlace {
-    from {
-      transform: none;
-      transition: none;
-      box-shadow: none;
-      color: silver;
-      -webkit-text-stroke: 0;
-    }
-    to {
-      transform: translate(270px, -110px);
-      transition: 1s;
-      width: 40%;
-      box-shadow: inset 10px 10px 80px silver, -10px -10px 80px rgb(0, 0, 0);
-      color: transparent;
-      -webkit-text-stroke: 1.5px black;
-    }
+    animation-name: botonEnlace;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
   @keyframes botonEnlace {
     from {
@@ -413,15 +330,12 @@ footer .footer__NavBarSocial a .mail:hover {
   font-family: "Hurricane";
   font-weight: 100;
   padding: 20px 20px;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 .botonWoodBoardBodega:hover, .botonWoodBoardProductos:hover, .botonViñedo:hover {
   cursor: pointer;
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
   text-shadow: 0px 0px 8px white, 39px -10px 20px silver;
   transform: scale(1.02);
   transition: 1s;
@@ -430,17 +344,6 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 .botonWoodBoardBodega:hover .fa-solid, .botonWoodBoardProductos:hover .fa-solid, .botonViñedo:hover .fa-solid {
   display: inline-block;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes fadeIn {
   0% {
@@ -488,12 +391,6 @@ footer .footer__NavBarSocial a .mail:hover {
   height: 275px;
   width: 275px;
 }
-.contenedorImagenes__Img1234:hover {
-  height: 350px;
-  width: 350px;
-  transition: 5s;
-  border: 10px solid black;
-}
 
 /******VIÑEDO****/
 /*SECCION_ENCABEZADO**/
@@ -522,19 +419,8 @@ footer .footer__NavBarSocial a .mail:hover {
 }
 
 .show {
-  -webkit-animation-name: displaySlow;
-          animation-name: displaySlow;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-@-webkit-keyframes displaySlow {
-  from {
-    display: none;
-  }
-  to {
-    display: block;
-  }
+  animation-name: displaySlow;
+  animation-duration: 3s;
 }
 
 @keyframes displaySlow {
@@ -583,66 +469,10 @@ footer .footer__NavBarSocial a .mail:hover {
 
 /*SECCION_FORMULARIO**/
 form div {
-  -webkit-animation-name: inputTilt;
-          animation-name: inputTilt;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-name: inputTilt;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
   box-shadow: 1px 1px 5px black;
-}
-@-webkit-keyframes inputTilt {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-    box-shadow: 50px 50px 20px black;
-  }
-  50% {
-    opacity: 1;
-    box-shadow: 40px 40px 5px black;
-  }
-  55% {
-    opacity: 1;
-    box-shadow: 20px 20px 20px black;
-  }
-  60% {
-    opacity: 1;
-    box-shadow: 10px 10px 5px black;
-  }
-  65% {
-    opacity: 1;
-    box-shadow: 8px 8px 5px black;
-  }
-  70% {
-    opacity: 1;
-    box-shadow: 6px 6px 20px black;
-  }
-  75% {
-    opacity: 1;
-    box-shadow: 4px 4px 5px black;
-  }
-  80% {
-    opacity: 1;
-    box-shadow: 2px 2px 20px black;
-  }
-  85% {
-    opacity: 0;
-    box-shadow: 1px 1px 5px black;
-  }
-  90% {
-    opacity: 1;
-    box-shadow: 1px 1px 5px black;
-  }
-  95% {
-    opacity: 1;
-    box-shadow: 1px 1px 5px black;
-  }
-  100% {
-    opacity: 1;
-    box-shadow: 1px 1px 5px black;
-  }
 }
 @keyframes inputTilt {
   0% {
@@ -706,11 +536,12 @@ form div Input {
   border: 1px solid rgba(192, 192, 192, 0.452);
 }
 form div textarea {
-  -webkit-animation-name: inputTilt;
-          animation-name: inputTilt;
+  animation-name: inputTilt;
   font-family: "Inria Serif", serif;
   font-size: 1em;
   letter-spacing: 2px;
   font-weight: 100;
   border: 1px solid rgba(192, 192, 192, 0.452);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
