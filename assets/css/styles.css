@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /*****SITIO******/
 * {
   margin: 0;
@@ -38,6 +39,9 @@ header nav .burguerIcon:active {
 header nav .navbar-toggler {
   width: 120px;
 }
+header nav .navbar-toggler:focus {
+  box-shadow: none;
+}
 header nav .navegacion {
   flex-basis: 0%;
 }
@@ -47,35 +51,11 @@ header nav .headerNavbar_Nav {
   animation-duration: 5s;
 }
 header nav .backgroundDropDown {
-  font-size: 1.5em;
-  background-color: rgba(247, 239, 239, 0.74);
-  white-space: pre-wrap;
+  background-color: rgba(247, 239, 239, 0.12);
 }
 @media (max-width: 575px) {
   header nav .dnone {
     display: none;
-  }
-}
-header nav .menuFly {
-  animation-name: menuFly;
-  animation-duration: 3s;
-  box-shadow: -4px 4px 0px #bc2a8d;
-}
-@keyframes menuFly {
-  from {
-    top: 5cm;
-  }
-  to {
-    top: 1.7cm;
-  }
-}
-header nav .dropdown-toggle::after {
-  color: #bc2a8d;
-}
-@media (max-width: 570px) {
-  header nav .dropdown-menu {
-    min-width: 0;
-    width: min-content;
   }
 }
 header .imgEncabezado {
@@ -112,59 +92,29 @@ footer {
   background-image: url(../img/wood_1.png);
 }
 footer .footer__NavBarSocial a {
-  border: 5px solid silver;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
   margin-bottom: 10px;
 }
-footer .footer__NavBarSocial a img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  animation-name: lightf;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  border-radius: 50%;
+footer .footer__NavBarSocial a i {
+  font-size: clamp(2em, 3vw, 4em);
 }
 footer .footer__NavBarSocial a .face {
-  background-color: #3b5998;
-}
-footer .footer__NavBarSocial a .face:hover {
-  animation: none;
+  color: #3b5998;
 }
 footer .footer__NavBarSocial a .insta {
-  background-color: #bc2a8d;
-}
-footer .footer__NavBarSocial a .insta:hover {
-  animation: none;
+  color: #bc2a8d;
 }
 footer .footer__NavBarSocial a .wapp {
-  background-color: #25d366;
-}
-footer .footer__NavBarSocial a .wapp:hover {
-  animation: none;
+  color: #25d366;
 }
 footer .footer__NavBarSocial a .mail {
-  background-color: #b2936d;
-}
-footer .footer__NavBarSocial a .mail:hover {
-  animation: none;
-}
-@keyframes lightf {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  color: #b2936d;
 }
 
 .footer__NavBar a {
-  font-size: 2em;
+  font-size: clamp(2em, 3vw, 4em);
   font-family: "Hurricane", cursive;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   color: white;
 }
@@ -182,27 +132,31 @@ footer .footer__NavBarSocial a .mail:hover {
     color: white;
   }
   to {
-    text-shadow: 0px 0px 8px white, 39px -10px 20px silver, 15px -10px 1px rgba(188, 42, 142, 0.4235294118);
-    transform: scale(1.5);
-    -webkit-text-stroke: 0.5px black;
+    text-shadow: 0px 0px 8px white, 39px -10px 20px silver;
+    transform: scale(1.1);
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
     color: transparent;
   }
+}
+
+.footer-logo-text {
+  font-size: clamp(0.9rem, 2vw, 3rem);
 }
 
 .logo {
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Junge", serif;
   animation-name: logoFadeIn;
   animation-duration: 5s;
 }
 .logo img {
-  box-shadow: 7px 7px #999;
+  box-shadow: 2px 2px #999;
 }
 .logo img:active {
-  box-shadow: 4px 4px #666;
-  transform: translate(3px, 3px);
+  box-shadow: 0px 0px #666;
+  transform: translate(2px, 2px);
 }
 @keyframes logoFadeIn {
   from {
@@ -418,19 +372,6 @@ footer .footer__NavBarSocial a .mail:hover {
   color: white;
 }
 
-.show {
-  animation-name: displaySlow;
-  animation-duration: 3s;
-}
-
-@keyframes displaySlow {
-  from {
-    display: none;
-  }
-  to {
-    display: block;
-  }
-}
 .cardsDiv {
   display: flex;
   justify-content: center;
@@ -457,6 +398,14 @@ footer .footer__NavBarSocial a .mail:hover {
   font-family: "Hurricane";
   font-size: 1.2rem;
   letter-spacing: 2px;
+}
+
+.card {
+  justify-content: space-between;
+}
+
+.card-body {
+  flex: 0.5 0.5 auto !important;
 }
 
 /******CONTACTO****/

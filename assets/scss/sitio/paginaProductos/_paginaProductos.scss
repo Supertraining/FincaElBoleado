@@ -8,14 +8,6 @@
   .buttonCards:hover {
   color: white;
 }
-.show {
-  animation-name: displaySlow;
-  animation-duration: 3s;
-}
-@keyframes displaySlow {
-  from {display: none;}
-  to {display: block;}
-}
 .cardsDiv {
 
   display: flex;
@@ -38,4 +30,10 @@
   font-family: "Hurricane";
   font-size: 1.2rem;
   letter-spacing: 2px;
+}
+.card {
+  justify-content: space-between;
+}
+.card-body {
+  flex: 0.5 0.5 auto !important;
 }

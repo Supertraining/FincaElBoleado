@@ -1,30 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Smooch+Sans:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Smooch+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
 
 /*****SITIO******/
-    @import "./sitio/_reset";
-    @import "./sitio/_variables";
-    @import "./sitio/_header.scss";
-    @import "./sitio/_footer.scss";
-    @import "./sitio/_Logos.scss";
-    @import"./sitio/_main.scss";
-    
-    /******INDEX****/
-        @import "./sitio/index/_index.scss";
-    
-    /******BODEGA****/
-        @import "./sitio/paginaBodega/_paginaBodega.scss";
+@import './sitio/_reset';
+@import './sitio/_variables';
+@import './sitio/_header.scss';
+@import './sitio/_footer.scss';
+@import './sitio/_Logos.scss';
+@import './sitio/_main.scss';
 
-    /******VIÑEDO****/
-        @import "./sitio/paginaViniedo/_paginaViniedo.scss";
+/******INDEX****/
+@import './sitio/index/_index.scss';
 
-    /******PRODUCTOS****/
-        @import "./sitio/paginaProductos/_paginaProductos.scss";
+/******BODEGA****/
+@import './sitio/paginaBodega/_paginaBodega.scss';
 
-    /******CONTACTO****/
-        @import "./sitio/paginaContacto/_paginaContacto.scss";
+/******VIÑEDO****/
+@import './sitio/paginaViniedo/_paginaViniedo.scss';
 
+/******PRODUCTOS****/
+@import './sitio/paginaProductos/_paginaProductos.scss';
+
+/******CONTACTO****/
+@import './sitio/paginaContacto/_paginaContacto.scss';

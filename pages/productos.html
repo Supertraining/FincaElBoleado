@@ -21,53 +21,44 @@
 
 <body class="container-fluid">
 
-  <!--SECCION_HEADER-->
   <header class="row">
 
     <nav
-      class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-content-between align-items-start headerNavbar pb-4">
+      class="navbar navbar-expand-md d-flex flex-column align-items-center flex-md-row justify-content-sm-between align-items-start headerNavbar pb-4">
 
       <a class="navbar text-decoration-none" href="../index.html">
         <div class="logo">
           <img class="img-fluid" src="../assets/img/Logo_Boleado2.jpg" alt="Logo" />
-          <p class="mt-2">GUANACO BOLEADO. CÓRDOBA.</p>
+          <p class="mt-2">GUANACO BOLEADO.</p>
+          <p class="mt-2">CÓRDOBA.</p>
         </div>
       </a>
 
-      <div>
+      <div class="align-self-start">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon burguerIcon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end navegacion" id="navbarNavDropdown">
-          <ul class="navbar-nav headerNavbar_Nav">
+        <div class="navbar-collapse collapse navegacion p-1 mt-2 rounded backgroundDropDown" id="navbarNavDropdown">
+          <ul class="navbar-nav headerNavbar_Nav gap-3 m-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link text-white" href="./bodega.html">
                 Bodega
               </a>
-              <div class="dropdown-menu bg-transparent p-0 menuFly" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item backgroundDropDown" href="../pages/bodega.html">Nuestra Bodega</a>
-                <a class="dropdown-item backgroundDropDown dnone" href="../pages/bodega.html#Acerca_De_Nosotros">Acerca
-                  de nosotros</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../pages/viniedo.html">Viñedo</a>
+              <a class="nav-link text-white" aria-current="page" href="./viniedo.html">Viñedo</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Tienda
+              <a class="nav-link text-white" href="./productos.html" id="navbarDropdownMenuLink" aria-haspopup="true"
+                aria-expanded="false">
+                Productos
               </a>
-              <div class="dropdown-menu bg-transparent p-0 menuFly" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item backgroundDropDown" href="../pages/productos.html">Nuestros productos</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../pages/contacto.html">Contacto</a>
+              <a class="nav-link text-white" aria-current="page" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -76,18 +67,17 @@
 
     </nav>
 
-    <div class="imgEncabezado d-flex align-items-center justify-content-center imgEncabezadoProductos text-center">
+    <div class="imgEncabezado imgEncabezadoProductos d-flex align-items-center justify-content-center text-center">
       <h1>Finca El Boleado</h1>
     </div>
-
   </header>
+
 
   <main>
 
-    <!-- SECCION_TEXTO_PRINCIPAL -->
     <section class="row justify-content-center text-center mt-5">
 
-      <p class="parrafo row col-xl-6 col-lg-8 col-md-8 col-sm-8 col-8 shadow">
+      <p class="parrafo row col-xl-8 col-lg-8 col-md-10 col-sm-10 col-12 shadow">
         Nuestros vinos son elaborados con nuestras propias manos, son orgánicos, artesanales y
         carecen de sulfitos agregados, lo que conserva el sabor original y noble de nuestros cortes y le da a nuestros
         vinos un toque de distinción frente a aquellos elaborados de manera industrial.
@@ -132,13 +122,6 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
-            <p class="m-0 text-white">$</p>
-            <p id="precioIva" class="text-white m-0">900</p>
-            <p class="m-0 text-white">+ IVA</p>
-            <a id="carrito" href="#" class="card-link text-decoration-none cardFont">Agregar al carrito <i
-                class="fa-solid fa-cart-arrow-down"></i></a>
-          </div>
         </div>
       </div>
       <div class="d-flex justify-content-center my-3 col-xl-3 col-lg-5 col-md-5 col-sm-6">
@@ -176,11 +159,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
-            <p class="text-white cardValue m-0">$900</p>
-            <a href="#" class="card-link text-decoration-none cardFont">Agregar al carrito <i
-                class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
@@ -220,11 +198,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
-            <p class="text-white cardValue m-0">$1200</p>
-            <a href="#" class="card-link text-decoration-none cardFont">Agregar al carrito <i
-                class="fa-solid fa-cart-arrow-down"></i></a>
           </div>
         </div>
       </div>
@@ -266,11 +239,6 @@
               </div>
             </div>
           </div>
-          <div class="card-body bg-dark text-center d-flex justify-content-around align-items-center">
-            <p class="text-white cardValue m-0">$900</p>
-            <a href="#" class="card-link text-decoration-none cardFont">Agregar al carrito <i
-                class="fa-solid fa-cart-arrow-down"></i></a>
-          </div>
         </div>
       </div>
       </div>
@@ -278,41 +246,35 @@
 
   </main>
 
-  <!--PIE_DE_PAGINA-->
   <footer class="row d-flex flex-wrap align-items-center justify-content-evenly mt-5" id="piePag">
-
-    <div class="col-md-3 col-sm-5 col-9 d-flex flex-column align-items-center mt-sm-5 mt-5">
-      <a class="text-decoration-none" href="../index.html">
+    <div class="col-md-3 col-sm-5 col-3 d-flex flex-column align-items-center mt-sm-5">
+      <a class="text-decoration-none" href="./index.html">
         <div class="logo">
           <img class="img-fluid" src="../assets/img/Logo_Boleado2.jpg" alt="Logo" />
-          <p class="text-white text-center mt-2">GUANACO BOLEADO. CÓRDOBA.</p>
+          <p class="text-white text-center mt-2 footer-logo-text">GUANACO BOLEADO. CÓRDOBA.</p>
         </div>
       </a>
     </div>
 
-    <div class="col-md-5 col-sm-5 col-10 d-flex flex-column align-items-center mt-sm-5">
+    <div class="col-md-3 d-flex flex-column align-items-center mt-sm-5 d-none d-md-block">
       <iframe class="img-fluid"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d90943.41851202038!2d-65.164012284533!3d-32.10460072002225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcc41eabcbdab3a5!2sFinca%20El%20Boleado!5e0!3m2!1ses!2sar!4v1647917528304!5m2!1ses!2sar"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d90943.  41851202038!2d-65.164012284533!3d-32.10460072002225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcc41eabcbdab3a5!2sFinca%20El%20Boleado!5e0!3m2!1ses!2sar!4v1647917528304!5m2!1ses!2sar"
         style="height: 170px" allowfullscreen="" loading="lazy"></iframe>
       <p class="text-white text-center">RP14 152, Córdoba, Argentina</p>
     </div>
 
-    <div class="col-md-1 col-sm-3 col-3 footer__NavBarSocial d-flex flex-column align-items-center mt-2">
-      <a href="https://www.facebook.com/fincaelboleado/"><img class="face"
-          src="../assets/img/SocialMediaIcons/facebook.png" alt="facebook" /></a>
-      <a href="https://www.instagram.com/fincaelboleado/?hl=es"><img class="insta"
-          src="../assets/img/SocialMediaIcons/instagram.png" alt="instagram" /></a>
-      <a href="https://wa.me/######"><img class="wapp" src="../assets/img/SocialMediaIcons/whatsapp.png"
-          alt="whatsapp" /></a>
-      <a href="mailto:fincaelboleado@gmail.com"><img class="mail" src="../assets/img/SocialMediaIcons/email.png"
-          alt="email" /></a>
+    <div class="col-md-1 col-sm-3 col-2 footer__NavBarSocial d-flex flex-column align-items-center mt-2">
+      <a href="https://www.facebook.com/fincaelboleado/"><i class="bi bi-facebook face"></i></a>
+      <a href="https://www.instagram.com/fincaelboleado/?hl=es"><i class="bi bi-instagram insta"></i></a>
+      <a href="https://wa.me/######"><i class="bi bi-whatsapp wapp"></i></a>
+      <a href="mailto:fincaelboleado@gmail.com"><i class="bi bi-envelope mail"></i></a>
     </div>
 
     <nav class="footer__NavBar d-flex flex-column align-items-center col-md-3 col-sm-3 col-3">
-      <a aria-current="page" href="../pages/bodega.html" id="navbod">Bodega</a>
-      <a aria-current="page" href="../pages/viniedo.html" id="navvin">Viñedo</a>
-      <a aria-current="page" href="../pages/productos.html" id="navprod">Productos</a>
-      <a aria-current="page" href="../pages/contacto.html" id="navcont">Contacto</a>
+      <a aria-current="page" href="./bodega.html" id="navbod">Bodega</a>
+      <a aria-current="page" href="./viniedo.html" id="navvin">Viñedo</a>
+      <a aria-current="page" href="./productos.html" id="navprod">Productos</a>
+      <a aria-current="page" href="./contacto.html" id="navcont">Contacto</a>
     </nav>
   </footer>
 
@@ -326,7 +288,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="../assets/javascript/main.js"></script>
-  <script src="../assets/javascript/tienda.js"></script>
 </body>
 
 </html>
