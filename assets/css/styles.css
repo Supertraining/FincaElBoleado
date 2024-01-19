@@ -139,10 +139,6 @@ footer .footer__NavBarSocial a .mail {
   }
 }
 
-.footer-logo-text {
-  font-size: clamp(0.9rem, 2vw, 3rem);
-}
-
 .logo {
   color: white;
   text-align: center;
