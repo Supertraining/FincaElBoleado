@@ -146,7 +146,7 @@ footer .footer__NavBarSocial a .mail {
 .logo {
   color: white;
   text-align: center;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 3rem);
   font-family: "Junge", serif;
   animation-name: logoFadeIn;
   animation-duration: 5s;
